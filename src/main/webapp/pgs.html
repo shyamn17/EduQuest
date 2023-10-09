@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pgs.css">
+</head>
+<script src="https://kit.fontawesome.com/73b67c2f0d.js" crossorigin="anonymous"></script>
+<body>
+    <nav>
+        <img src="./vectorstock_24451537-removebg-preview.png" alt="">
+        <div id="txt">
+            <div id="txt1"> Edu</div>
+            <div id="txt2">Quest</div>
+            <div id="items">
+                <ul>
+                   <div><li class="li"><a href="./home.html">HOME</a></li></div>
+                   <li class="li"><a href="./about.html">ABOUT</a></li>
+                   <li class="li"><a href="./courses.html">COURSES</a></li>
+                   <li class="li"><a href="./Events.html">CODING</a></li>
+                   <li class="li"><a href="./signup.html">SIGN UP</a></li>
+                   <li class="li"><a href="./login.html">LOGIN IN</a></li>
+                <li> <span id="span"> <i class="fa-solid fa-cart-shopping fa-bounce" style="color: #1f575b; font-size: 45px ;"  ></i></li>
+               </ul>
+           </div>
+        </div>
+</nav><br><br>
+    <div id="d">
+        <label for="" class="lab">Enter a program name :</label>
+               
+                <select name="" id="select">
+                    <option value="prime">Prime</option>
+                    <option value="pallindrome">Pallindrome</option>
+                    <option value="HappyNo">Happy No</option>
+                    <option value="ArmstrongNo">Armstrong No</option>
+                    <option value="StrongNo">Strong No</option>
+                   <option value="Deserium">Deserium No</option>
+                   <option value="Fibonacci">Fibonacci </option>
+                   <option value="Factorial">Factorial </option>
+                   <option value="Odd">Odd </option>
+                   <option value="Even">Even </option>
+              
+                </select>
+                <input type="text" id="inp"><br><br>
+                <button id="num">Submit</button>
+                <h2></h2></div>
+        <script>
+            function Pallindrome() {
+           var num=151;
+            var rev=parseInt(num.toString().split("").reverse().join(""));
+          
+            if(rev == num){
+               console.log("pallindrome num");
+            }
+            else{
+               console.log("not a pallindrome num");
+            }
+                 return Pallindrome       
+        }
+        
+        //--------------prime
+        function Prime(){
+          var num=7;
+            var flag=1;
+            for (let i = 0; i < parseInt(num/2); i++) {
+               if(num%i==0){flag=0
+                 break;}
+                
+            }if(flag)
+            console.log("prime num");
+            else {
+           console.log("not a prime num");
+            }
+        return Prime
+        }
+        
+        function Happy() {
+            let n=7;
+          let sum = 0;
+          while (n > 0) {
+            let rem = n % 10;
+            n = Math.floor(n / 10);
+            sum += rem * rem;
+          }
+          if (sum === 1) {
+            return true;
+          } else if (sum > 1 && sum <= 4) {
+            return false;
+          }
+          return isHappy;
+        }
+        function Armstrong()
+        {
+            let no=153;
+            let count=0;
+            let sum=0;
+            let no1=no;
+            let no2=no;
+            while(no1!=0)
+            {
+                no1=parseInt(no1/10);
+                count++;
+            }
+            while(no!=0)
+            {
+                let rem = parseInt(no%10);
+                sum+=Math.pow(rem,count);
+                no=parseInt(no/10);
+            }
+                if(no2==sum)
+            {
+                console.log("armstrong number");
+            }else{
+                console.log("not an armstrong number");
+            }
+            return Armstrong
+        }
+        function Strong(){
+            let num=153;
+        let sum=0;
+        let copy=num
+        while (num>0) {
+            let d=num%10
+            let fact=1;
+            for(let i=1;i<=d;i++)
+            {
+                fact=fact*i;
+            }
+            sum=sum + fact
+            num=parseInt(num/10);
+        }
+        if(sum==copy)
+         console.log("strong number");
+        else{
+       console.log("not a strong num");
+        }
+        return Strong
+        }
+        function Deserium()
+        
+            {
+                let no=154;
+                let count=0;
+                let sum=0;
+                let no1=no;
+                let no2=no;
+                
+                while(no1!=0)
+                {
+                    no1=parseInt(no1/10);
+                    count++;
+                }
+                while(no!=0)
+                {
+                    let rem = parseInt(no%10);
+                    sum+=Math.pow(rem,count);
+                    no=parseInt(no/10);
+                    count--;
+                }
+                    if(no2==sum){
+                       console.log("deserium num");
+                    }
+                    else{
+                        console.log("not a deserium num");
+                    }
+                    return Deserium
+                }
+                function fibonacci(){
+                    let n=5;
+            var set =[]
+         let a=0;
+        let b=1;
+        
+        for(let i=1;i<=n;i++)
+        {
+            let c=a+b;
+            // console.log(c);
+            set.push(c)
+            a=b;
+            b=c;
+            
+        }console.log(`${set}`); 
+    return fibonacci
+} 
+        
+        function Factor(){
+            let n=5;
+        let fact=1;
+        for(let i=1;i<=n;i++)
+        {
+            fact=fact*i;
+            
+        }
+        return Factor
+        }
+        function Odd(){
+            let i=9;
+            if(i%2==1)
+            {
+               console.log("odd num");
+            }
+            return Odd
+        } 
+        function Even(){
+            var i=34;
+            if(i%2==0)
+            {
+                console.log("even num");
+            }
+            return Even
+        }
+        
+        
+        var btn=document.querySelector("#num")
+        var inp=document.querySelector("#inp")
+        var select=document.querySelector("#select")
+        var h2=document.querySelector("h2")
+        var cart=document.querySelector("#span")
+        cart.addEventListener('click',() => {
+        const url='./cart.html'
+        window.location.href=url;
+    })
+        btn.addEventListener("click",()=>{
+            var selectValue=select.value
+            var inpValue=inp.value
+            if(selectValue=="pallindrome")
+            {h2.innerText=`${isPallindrome()}`}
+            else if(selectValue=="prime")
+            { h2.innerText=`${isPrime()}`}
+            else if(selectValue=="HappyNo")
+            { h2.innerText=`${isHappy()}`}   
+            else if(selectValue=="ArmstrongNo")
+            { h2.innerText=`${Armstrong()}`} 
+            else if(selectValue=="StrongNo")
+            { h2.innerText=`${Strong()}`} 
+            else if(selectValue=="Deserium")
+            { h2.innerText=`${Deserium()}`} 
+           else if(selectValue=="Fibonacci")
+            { h2.innerText=`${ fibonacci()}`} 
+           else if(selectValue=="Factorial")
+            { h2.innerText=`${Factor()}`}
+             else if(selectValue=="Odd")
+            { h2.innerText=`${Odd()}`}
+            else if(selectValue=="Even")
+            { h2.innerText=`${Even()}`}
+        })
+        </script>
+        </body>
+</html>

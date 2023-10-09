@@ -1,0 +1,109 @@
+/* nav{
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url(https://images.theconversation.com/files/526342/original/file-20230515-35525-9hwk75.jpg?ixlib=rb-1.1.0&rect=0%2C344%2C5235%2C2617&q=45&auto=format&w=1356&h=668&fit=crop);
+} */
+img{
+    width: 135px;
+    height: 100px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+h2{
+    color:rgb(19, 18, 17);
+
+}
+ul{
+    display: flex;
+    /* justify-content: space-evenly;
+    align-items: center; */
+    list-style: none;
+    
+}
+#txt
+{
+    font-size: xx-large;
+    left: 9px;
+    display: flex;
+    position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    /* margin-left: 700px;
+    margin-bottom: 50px   ; */
+}
+#txt1{
+    color: rgb(7, 7, 145);
+}
+#txt2
+{
+
+    color: rgb(255, 255, 255);
+
+}
+#ram{
+    height: 35px;
+    width: 153px;
+}
+.lab{
+    font-family: "Poppins", sans-serif;
+    font-size:x-large;
+}
+#ram{
+    height: 35px;
+    width: 140px;
+}
+button{
+    height: 30px;
+    width: 70px;
+}
+#inp{
+    display: none;
+}
+.lab{
+    font-family: "Poppins", sans-serif;
+    font-size:x-large;
+}
+#items ul li{
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    padding:20px,15px;
+    position: relative;
+    left: 50px;
+    top: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+ 
+#items ul li a{
+    display: inline;
+    padding: 20px;
+    
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+   font-size: large;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+
+}  
+     nav{
+        height: 140px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg");
+    }
+    #items{
+        position: relative;
+        bottom: 95px;
+        left: 500px;
+    }
+    .li:hover{
+        background-color: #133e3f;
+        color: beige;
+    } 
+    #items li span:hover{
+        background-color: none;
+        background: none;
+    }

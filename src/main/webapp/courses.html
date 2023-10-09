@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courses</title>
+</head>
+<link rel="stylesheet" href="./courses.css">
+<script src="https://kit.fontawesome.com/73b67c2f0d.js" crossorigin="anonymous"></script>
+<body>
+    <nav>
+        <img src="./vectorstock_24451537-removebg-preview.png" alt="">
+        <div id="txt">
+            <div id="txt1"> Edu</div>
+            <div id="txt2">Quest</div>
+            <div id="items">
+                <ul>
+                   <div><li class="li"><a href="./home.html">HOME</a></li></div>
+                   <li class="li"><a href="./about.html">ABOUT</a></li>
+                   <li class="li"><a href="./courses.html">COURSES</a></li>
+                   <li class="li"><a href="./Events.html">CODING</a></li>
+                   <li class="li"><a href="./signup.html">SIGN UP</a></li>
+                   <li class="li"><a href="./login.html">LOGIN IN</a></li>
+                <li> <span id="span"> <i class="fa-solid fa-cart-shopping fa-bounce" style="color: #1f575b; font-size: 45px ;"  ></i></li>
+               </ul>
+           </div>
+        </div>
+</nav>
+        
+        <div id="sh">
+            <div id="hs">
+               <center><h3>POPULAR COURSES</h3> 
+                <h2>It is a long established fact that a reader will be distracted</h2>
+               </center>
+           </div>
+           <div id="jsp">
+               <div id="box">
+                   
+                <div id="img1"></div>
+                <div id="img2"></div>
+                 <div id="img3"></div>
+                <div id="img4"></div>
+                   <div id="img5"></div>
+                 <div id="img6"></div>
+               </div>
+            </div>
+        </div>
+    
+<script>
+    var div1=document.querySelector('#img1');
+    var div2=document.querySelector('#img2');
+    var div3=document.querySelector('#img3');
+    var div4=document.querySelector('#img4');
+    var div5=document.querySelector('#img5');
+    var div6=document.querySelector('#img6');
+    div1.addEventListener('click',() => {
+        const url='./java.html'
+        window.location.href=url;
+    })
+    div2.addEventListener('click',() => {
+        const url='./mern.html'
+        window.location.href=url;
+    })
+    div3.addEventListener('click',() => {
+        const url='./mean.html'
+        window.location.href=url;
+    })
+    div4.addEventListener('click',() => {
+        const url='./python.html'
+        window.location.href=url;
+    })
+    div5.addEventListener('click',() => {
+        const url='./ai.html'
+        window.location.href=url;
+    })
+    div6.addEventListener('click',() => {
+        const url='./devops.html'
+        window.location.href=url;
+    })
+    var cart=document.querySelector("#span")
+        cart.addEventListener('click',() => {
+        const url='./cart.html'
+        window.location.href=url;
+    })
+</script>
+      
+</body>
+</html>

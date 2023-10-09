@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT PAGE</title>
+    <style>
+        body{
+    margin: 0px;
+    padding: 0px;
+}
+ img{
+    width: 115px;
+    height: 80px;
+    margin-left: 20px;
+}
+h2{
+    color:rgb(19, 18, 17);
+
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    
+}
+#txt
+{
+     font-size: xx-large;
+     left: 20px;
+     display: flex;
+     top: -07px;
+     position: relative;
+     height: 30px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+     /* margin-left: 700px; */
+     /* margin-bottom: 50px   ;  */
+ }
+
+#txt1{
+    color: rgb(7, 7, 145);
+}
+#txt2
+{
+
+    color: white;
+
+}
+#items ul li{
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    padding:20px,15px;
+    position: relative;
+    left: 50px;
+    top: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+ 
+#items ul li a{
+    display: inline;
+    padding: 20px;
+    
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+   font-size: large;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+
+} 
+ nav{
+    height: 115px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg");
+}
+#items{
+    position: relative;
+    bottom: 95px;
+    left: 500px;
+}
+.li:hover{
+    background-color: #133e3f;
+    color: beige;
+} 
+#items li span:hover{
+    background-color: none;
+    background: none;
+}
+.bor{
+   
+    height: 700px;
+    width: 1523px;
+
+}
+#img1{
+    height: 450px;
+    width: 400px;
+    /* border: 1px solid black; */
+    background-image: url("https://sliwainsights.com/wp-content/uploads/2019/08/Offer_Letter_sh-999x666.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 200px;
+    margin-top: 80px;
+    border-radius: 05%;
+}
+#img2{
+    height: 250px;
+    width: 250px;
+    /* border: 1px solid black; */
+    background-image: url("https://www.jobmonkey.com/wp-content/uploads/2016/12/irresistible-job-offer-dp-300x250.jpg");
+    background-size: cover;
+    margin-left: 500px;
+    margin-top: -210px;
+    border-radius: 05%;
+}
+#abt{
+    font-weight: bolder;
+    font-size: 32px;
+    margin-left: 800px;
+    margin-top:-400px;
+    font-family: "Poppins", sans-serif;
+}
+#let{
+    font-size: 20px;
+    margin-left: 800px;
+    margin-top:30px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+span :hover{
+    cursor: pointer;
+}
+
+#read{
+    
+    height: 50px;
+    width: 160px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    /* background-color: rgb(73, 72, 72); */
+    background-color: #133e3f;
+
+    color: white;
+    margin-left: 800px;
+    margin-top: 25px;
+   
+ }
+ button:hover{
+    cursor: pointer;
+    background-color: rgb(38, 38, 69);
+ }
+#read:hover{
+    /* background-color: ; */
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid black;
+    color: black;
+
+
+}
+    </style>
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/73b67c2f0d.js" crossorigin="anonymous"></script>
+    <body>
+        <nav>
+            <img src="./vectorstock_24451537-removebg-preview.png" alt="">
+            <div id="txt">
+                <div id="txt1"> Edu</div>
+                <div id="txt2">Quest</div>
+                <div id="items">
+                    <ul>
+                       <div><li class="li"><a href="./home.html">HOME</a></li></div>
+                       <li class="li"><a href="./about.html">ABOUT</a></li>
+                       <li class="li"><a href="./courses.html">COURSES</a></li>
+                       <li class="li"><a href="./Events.html">CODING</a></li>
+                       <li class="li"><a href="./signup.html">SIGN UP</a></li>
+                       <li class="li"><a href="./login.html">LOGIN IN</a></li>
+                    <li> <span id="span"> <i class="fa-solid fa-cart-shopping fa-bounce" style="color: #1f575b; font-size: 45px ;"  ></i></li>
+                   </ul>
+               </div>
+            </div>
+    </nav>
+
+<div class="bor">
+    <div id="img1"></div>
+    <div id="img2"></div>
+    <div id="abt"><u>ABOUT OUR COURSES</u></div>
+    <div id="let">Whether you want to learn or to share what you know, you’ve come<br> to the right place. As a global destination for online learning, we empower organizations and individuals with flexible and effective skill development.</div>
+    <button id="read"> READ MORE</button>
+</div>
+<script>
+    let btn=document.querySelector("#read")
+    btn.addEventListener("click", ()=>{
+        window.location.href="./courses.html"
+    })
+</script>
+</body>
+</html>

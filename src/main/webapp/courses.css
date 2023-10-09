@@ -1,0 +1,227 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+ img{
+    width: 135px;
+    height: 100px;
+    
+}
+h2{
+    color:rgb(19, 18, 17);
+
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    
+}
+#txt
+{
+     font-size: xx-large;
+     left: 10px;
+     display: flex;
+     position: relative;
+     height: 40px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+     /* margin-left: 700px; */
+     /* margin-bottom: 50px   ;  */
+}
+
+#txt1{
+    color: rgb(7, 7, 145);
+}
+#txt2
+{
+
+    color:white;
+
+}
+#items ul li{
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    padding:20px,15px;
+    position: relative;
+    left: 50px;
+    top: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+span :hover{
+    cursor: pointer;
+}
+
+#items ul li a{
+    display: inline;
+    padding: 20px;
+    
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+   font-size: large;
+    font-weight: 600;
+    line-height: 1.5;
+    color: black
+
+} 
+#items li span:hover{
+    background-color: none;
+    background: none;
+}
+ nav{
+    height: 125px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg");
+}
+#items{
+    position: relative;
+    bottom: 95px;
+    left: 370px;
+}
+.li:hover{
+    background-color: #133e3f;
+    color: beige;
+} 
+#items li span:hover{
+    background-color: none;
+    background: none;
+}
+#sh{
+    background-color: white;
+    /* border: 2px solid black; */
+    height: 705px;
+    margin-top: -20px;
+}
+#items li:hover{
+    background-color: #133e3f;
+    color: beige;
+} 
+#hs{
+    height: 100px;
+    margin-top: 30px;
+    /* border: 2px solid black; */
+}
+#sh h3{
+    font-weight: 800;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    margin-top: 10px;
+    font-weight: bold;
+}
+#hs h2{
+    margin-top: -15px;
+    font-size: larger;
+}
+#jsp{
+    /* border: 2px solid greenyellow; */
+    height: 570px;   
+}
+#box
+{   margin-top: 10px ;
+    /* border: 2px solid pink; */
+    height: 550px;
+}
+
+#img1{
+    height: 200px;
+    /* border: 2px solid blue;  */
+    width: 350px;
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/574/84/desktop-wallpaper-net-full-stack-developer-full-stack-thumbnail.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    margin-top: 20px;
+    border-radius: 10%;
+
+}
+#img2{
+    height: 200px;
+    /* border: 2px solid blue;  */
+    width: 350px;
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/411/249/desktop-wallpaper-be-your-awesome-mern-stack-developer-by-nishant08111-mern-stack-thumbnail.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 600px;
+    margin-top: -200px;
+    border-radius: 10%;
+}
+#img3{
+    height: 200px;
+     /* border: 2px solid blue;   */
+    width: 350px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQduk2Wudp-Sy4pr4N-e8wwDntbikQvh_Hb3g&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 1000px;
+    margin-top: -200px;
+    border-radius: 10%;
+}
+#img4{
+    height: 200px;
+     /* border: 2px solid blue;   */
+    width: 350px;
+    background-image: url("https://uploads-ssl.webflow.com/60c912417dc3bac5c9fa2616/61cb84e73ab5cb48cbb1c342_DevOps%20on%20AWS%20(1)%20(1)%20(1).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 1000px;
+    margin-top: 40px;
+    border-radius: 10%;
+}
+#img5{
+    height: 200px;
+    /* border: 2px solid blue;  */
+    width: 350px;
+    background-image: url("https://www.drishtiias.com/images/blogs/machine-learning-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 600px;
+    margin-top: -200px;
+    border-radius: 10%;
+}
+#img6{
+    height: 200px;
+    /* border: 2px solid blue;  */
+    width: 350px;
+    background-image: url("https://previews.123rf.com/images/timbrk/timbrk1604/timbrk160400153/56836558-powerful-programming-language-word-python-of-the-yellow-square-pixels-on-a-black-matrix-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 200px;
+    margin-top: -200px;
+    border-radius: 10%;
+}
+
+ #img1:hover{
+    /* background-color: #133e3f; */
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/574/84/desktop-wallpaper-net-full-stack-developer-full-stack-thumbnail.jpg");
+    background-image:linear-gradient(rgba(31, 59, 57, 0.5),rgba(44, 77, 74, 0.5)), url("https://e1.pxfuel.com/desktop-wallpaper/574/84/desktop-wallpaper-net-full-stack-developer-full-stack-thumbnail.jpg");   
+} 
+#img2:hover{
+    /* background-color: #133e3f; */
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/411/249/desktop-wallpaper-be-your-awesome-mern-stack-developer-by-nishant08111-mern-stack-thumbnail.jpg");
+    background-image:linear-gradient(rgba(31, 59, 57, 0.5),rgba(44, 77, 74, 0.5)), url("https://e1.pxfuel.com/desktop-wallpaper/411/249/desktop-wallpaper-be-your-awesome-mern-stack-developer-by-nishant08111-mern-stack-thumbnail.jpg");   
+}
+#img4:hover{
+    /* background-color: #133e3f; */
+    background-image: url("https://uploads-ssl.webflow.com/60c912417dc3bac5c9fa2616/61cb84e73ab5cb48cbb1c342_DevOps%20on%20AWS%20(1)%20(1)%20(1).png");
+    background-image:linear-gradient(rgba(31, 59, 57, 0.5),rgba(44, 77, 74, 0.5)), url("https://uploads-ssl.webflow.com/60c912417dc3bac5c9fa2616/61cb84e73ab5cb48cbb1c342_DevOps%20on%20AWS%20(1)%20(1)%20(1).png");   
+} 
+#img3:hover{
+    /* background-color: #133e3f; */
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQduk2Wudp-Sy4pr4N-e8wwDntbikQvh_Hb3g&usqp=CAU");
+    background-image:linear-gradient(rgba(31, 59, 57, 0.5),rgba(44, 77, 74, 0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQduk2Wudp-Sy4pr4N-e8wwDntbikQvh_Hb3g&usqp=CAU");   
+} 
+#img5:hover{
+    /* background-color: #133e3f; */
+    background-image: url("https://www.drishtiias.com/images/blogs/machine-learning-2.png");
+    background-image:linear-gradient(rgba(31, 59, 57, 0.5),rgba(44, 77, 74, 0.5)), url("https://www.drishtiias.com/images/blogs/machine-learning-2.png");   
+} 
+#img6:hover{
+    /* background-color: #133e3f; */
+    background-image: url("https://previews.123rf.com/images/timbrk/timbrk1604/timbrk160400153/56836558-powerful-programming-language-word-python-of-the-yellow-square-pixels-on-a-black-matrix-background.jpg");
+    background-image:linear-gradient(rgba(31, 59, 57, 0.5),rgba(44, 77, 74, 0.5)), url("https://previews.123rf.com/images/timbrk/timbrk1604/timbrk160400153/56836558-powerful-programming-language-word-python-of-the-yellow-square-pixels-on-a-black-matrix-background.jpg");   
+} 
+.box:hover{
+    cursor: pointer;
+}

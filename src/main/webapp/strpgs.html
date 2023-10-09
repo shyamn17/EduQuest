@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./strpgs.css">
+</head>
+<script src="https://kit.fontawesome.com/73b67c2f0d.js" crossorigin="anonymous"></script>
+<body>
+  <nav>
+    <img src="./vectorstock_24451537-removebg-preview.png" alt="">
+    <div id="txt">
+        <div id="txt1"> Edu</div>
+        <div id="txt2">Quest</div>
+        <div id="items">
+            <ul>
+               <div><li class="li"><a href="./home.html">HOME</a></li></div>
+               <li class="li"><a href="./about.html">ABOUT</a></li>
+               <li class="li"><a href="./courses.html">COURSES</a></li>
+               <li class="li"><a href="./Events.html">CODING</a></li>
+               <li class="li"><a href="./signup.html">SIGN UP</a></li>
+               <li class="li"><a href="./login.html">LOGIN IN</a></li>
+            <li> <span id="span"> <i class="fa-solid fa-cart-shopping fa-bounce" style="color: #1f575b; font-size: 45px ;"  ></i></li>
+           </ul>
+       </div>
+    </div>
+</nav><br><br>
+    <div id="d">
+      <label for="" class="lab">Enter a program name :</label>
+     
+      <select name="" id="ram">
+          <option value="frequency">Frequency</option>
+          <option value="pallindrome">Pallindrome</option>
+          <option value="panagram">Panagram</option>
+           <option value="reverse">Reverse</option>
+           <option value="vowelsAndConsonants">vowelsAndConsonants</option>
+             <option value="removeConsecutiveString">RemoveConsecutiveString</option>
+             <option value="lowercase">Lowercase</option>
+             <option value="uppercase">uppercase</option>
+             <option value="duplicateChar">DuplicateChar</option>
+      </select>
+      <input type="text" id="inp"><br><br>
+      <button id="num">Submit</button>
+      <h2></h2></div>
+      <script>
+  
+  function Pallindrome() {
+    let str="gadag"
+      var j = str.length-1
+      for(var i=0; i<str.length/2; i++){
+          if(str[i]!=str[j]){
+              return `${str} is not a pallindrome`;
+          }
+          j--;
+      }
+      return Pallindrome;
+  }
+  //-------------------------frequency
+  function frequency() {
+    let string ="hello"
+  const alphabet ='abcdefghijklmnopqrstuvwxyz'
+  const alphabetUp = alphabet.toUpperCase()
+  let freq=[26] 
+  let arr=[]
+  
+  let str="";
+  for(let i in alphabet){
+     freq[i]=0
+      for(let j in string ){
+           if(alphabet[i] == string[j] || alphabetUp[i] == string[j] ){
+          freq[i] = freq[i] + 1
+          }
+      }
+      if(freq[i] != 0){
+          str = str + ` ${alphabet[i]}: ${freq[i]}\n `
+              }
+   }
+   return frequency
+  }
+
+  function DuplicateChar() {
+    let str="aba"
+    let result = '';
+    for (let i = 0; i < str.length; i++) {
+      if (result.indexOf(str[i]) === -1) {
+        result += str[i];
+      }
+    }
+    return DuplicateChar;
+  }
+  
+  // Example usage:
+  // const inputString = "Hello, World!";
+  // const stringWithoutDuplicates = removeDuplicates(inputString);
+  // console.log(stringWithoutDuplicates); // Output: "Helo, Wrd!"
+  
+  
+  
+  function panagram() {
+    let str="thequicklazyfoxjumpsoverdog"
+      const set = new Set();
+      for (let ch of str) {
+          if (ch >= 'a' && ch <= 'z') {
+              set.add(ch);
+          }
+         if (ch >= 'A' && ch <= 'Z') {
+              ch = ch.toLowerCase();
+              set.add(ch);
+          }
+      }
+      if( set.size === 26){
+        console.log("panagram");
+      }
+      return  panagram
+  }
+  
+
+  function reverse() {
+    let str="ram"
+      var newString = "";
+      for (var i = str.length - 1; i >= 0; i--) {
+          newString += str[i];
+      }
+      return reverse;
+  }
+  function vowelsAndConsonants() {
+    let s="abc"
+      let str="";
+    const vowels = [];
+    const consonants = [];
+    for (let ch of s) {
+      if ((ch == 'a') || (ch == 'e') || (ch == 'i') || (ch == 'o') || (ch == 'u')||(ch == 'A')||(ch == 'E')||(ch == 'I')||(ch == 'O')||(ch == 'U')){
+        vowels.push(ch)
+      } else {
+        consonants.push(ch)
+      }
+    }
+    str = str + ` ${vowels} are vowels  ${consonants} are consonants`
+  return vowelsAndConsonants
+    
+  }
+  function removeConsecutiveString () {
+    let s="aabc"
+                      let n = s.length;
+                      let str = "";
+                      if (n == 0)
+                      return str;
+  for (let i = 0; i <= n - 1; i++) {
+  if (s[i] != s[i + 1]) {
+  str += s[i];
+  }
+  }
+  return removeConsecutiveString;
+  }
+  
+  function lowercase(){
+    let str="HELLO"
+     var str1= str.toLowerCase()
+     return lowercase
+  }
+  
+  function uppercase(){
+    let str="hello"
+     var str1= str.toUpperCase()
+     return uppercase
+  }
+  var btn=document.querySelector("#num")
+  var inp=document.querySelector("#inp")
+  var select=document.querySelector("#ram")
+  var h2=document.querySelector("h2")
+  btn.addEventListener("click",()=>{
+      var selectValue=select.value
+      var inpValue=inp.value
+      if(selectValue=="pallindrome")
+      {h2.innerText=`${Pallindrome()}`}
+      else if(selectValue=="frequency")
+      {h2.innerText=`${frequency()}`}
+      else if(selectValue=="panagram")
+      {h2.innerText=`${panagram()}`}
+      else if(selectValue=="Anagram")
+      {h2.innerText=`${Anagram()}`}
+      else if(selectValue=="reverse")
+      {h2.innerText=`${reverse()}`}
+      else if(selectValue=="vowelsAndConsonants")
+      {h2.innerText=`${vowelsAndConsonants()}`}
+      else if(selectValue=="removeConsecutiveString")
+      {h2.innerText=`${removeConsecutiveString()}`}
+      else if(selectValue=="lowercase")
+      {h2.innerText=`${lowercase()}`}
+      else if(selectValue=="uppercase")
+      {h2.innerText=`${uppercase()}`}
+      else if(selectValue=="duplicateChar")
+      {h2.innerText=`${DuplicateChar()}`}
+  
+  
+  })
+  
+  var cart=document.querySelector("#span")
+        cart.addEventListener('click',() => {
+        const url='./cart.html'
+        window.location.href=url;
+    })
+      </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+img{
+    width: 135px;
+    height: 100px;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+h2{
+    color:rgb(19, 18, 17);
+
+}
+ul{
+    display: flex;
+    /* justify-content: space-evenly;
+    align-items: center; */
+    list-style: none;
+    
+}
+#txt
+{
+     font-size: xx-large;
+     left: 8px;
+     display: flex;
+     position: relative;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+     /* margin-left: 700px;
+     margin-bottom: 50px   ; */
+}
+#txt1{
+    color: rgb(7, 7, 145);
+}
+button{
+    background-color: rgba(21, 198, 181, 0.8);
+    border: 3px solid white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+}   
+button:hover{
+    border:3px solid #133e3f;
+}
+button.active{
+    border:3px solid #133e3f;
+}
+#txt2
+{
+
+    color: rgb(255, 255, 255);
+
+}
+#items ul li{
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    padding:20px,15px;
+    position: relative;
+    left: 50px;
+    top: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+ 
+#items ul li a{
+    display: inline;
+    padding: 20px;
+    
+    text-decoration: none;
+    font-family: 16px,"Poppins", sans-serif;
+   font-size: large;
+    line-height: 1.5;
+    color: white;
+
+} 
+nav{
+    height:800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex;
+     position: absolute; */
+    background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg);
+}
+#items{
+    position: relative;
+    bottom: 95px;
+    left: 570px;
+   
+    }
+#items li:hover{
+    background-color: #133E3F;
+}
+.read a{
+display: inline-block;
+font-family: "Poppins", sans-serif;
+    padding: 10px 45px;
+    background-color: #133e3f;
+    border: 1px solid #133e3f;
+    color: #ffffff;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: transform 0.5s ease;
+
+}
+.read a:hover{
+    cursor: pointer;
+    box-sizing: border-box;
+}
+#icon{
+    height: 30px;
+    width: 50px;
+}
+    
+.read center h1{
+
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 4.4rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+#items li span:hover{
+    background-color: none;
+    background: none;
+    }

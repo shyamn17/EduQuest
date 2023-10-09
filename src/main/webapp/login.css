@@ -1,0 +1,219 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+ img{
+    width: 115px;
+    height: 80px;
+    margin-left: 20px;
+}
+h2{
+    color:rgb(19, 18, 17);
+
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    
+}
+#txt
+{
+     font-size: xx-large;
+     left: 20px;
+     display: flex;
+     top: -07px;
+     position: relative;
+     height: 30px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+     /* margin-left: 700px; */
+     /* margin-bottom: 50px   ;  */
+}
+
+#txt1{
+    color: rgb(7, 7, 145);
+}
+#txt2
+{
+
+    color: white
+
+}
+#items ul li{
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    padding:20px,15px;
+    position: relative;
+    left: 50px;
+    top: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+ 
+#items ul li a{
+    display: inline;
+    padding: 20px;
+    
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+   font-size: large;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+
+} 
+ nav{
+    height: 115px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg");
+}
+#items{
+    position: relative;
+    bottom: 95px;
+    left: 470px;
+}
+.li:hover{
+    background-color: #133e3f;
+    color: beige;
+} 
+#items li span:hover{
+    background-color: none;
+    background: none;
+}
+.man{
+    border: none;
+    height: 700px;
+    display: flex;
+    background-image: linear-gradient(rgba(8, 66, 61, 0.8),rgba(8, 66, 61, 0.8)),url("https://www.ukstudycentre.co.uk/wp-content/uploads/2019/10/common-entrance-phased-out-700x415.png");
+    background-size: cover;
+ }
+
+ #xyz{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /* border: 2px solid black; */
+ }
+ #row{
+    /* display: -ms-flexbox; */
+    display: flex;
+    /* -ms-flex-wrap: wrap; */
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    /* border: 2px solid black; */
+    height: 650px;
+
+ }
+
+ #col{
+    flex: 0 0 50%;
+    /* max-width: 50%; */
+    max-width: 600px;
+    margin-left: 200px;
+    margin-top: 200px;
+ }
+ h3{
+color: white;
+font-weight: bolder;
+font-size: 200%;
+
+ }
+ p{
+    color: aliceblue;
+    font-size:130%;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .sub{
+    border: none ;
+    height: 60px;
+    width: 200px;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #133e3f;
+    color: white;
+ }
+ #reg{
+    border: none ;
+    height: 60px;
+    width: 200px;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #133e3f;
+    color: white;
+ }
+ #bot {
+ /* border:  2px solid black;  */
+width: 600px;
+ }
+ #bob h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin-top: 40px;
+   
+ }
+ #exam{
+    height: 100px;
+    width: 800px;
+    /* border: 2px solid brown; */
+ }
+ #em{
+    /* border: 2px solid beige;  */
+    height: 350px;
+    width: 550px;
+    border-radius: 10%;
+    background-color:rgba(255, 255, 255, 0.25);
+    margin-top: 150px;
+    margin-left: 10px;
+ }
+ #name{
+    /* margin-top: 50px; */
+    height: 40px;
+    width: 350px;
+    word-spacing: none;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#log{
+    
+    height: 60px;
+    width: 200px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: rgb(73, 72, 72); */
+    background-color: #252525;
+
+    color: white;
+    margin-top: 30px;
+   
+ }
+ #bob{
+    height: 350px;
+    width: 550px;
+    border:1px solid black;
+    border-radius: 10%;
+    background-color:rgba(255, 255, 255, 0.25);;
+    margin-top: 30px;
+ }
+ /* #reg:hover{
+    /* background-color: ; */
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+
+
+} */
+#items li:hover{
+    background-color: #133e3f;
+   
+}
+button:hover{
+    cursor: pointer;
+}

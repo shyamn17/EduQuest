@@ -1,0 +1,187 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+img{
+    width: 115px;
+    height: 80px;
+    margin-left: 20px;
+}
+h2{
+    color:rgb(19, 18, 17);
+
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    
+}
+#txt
+{
+     font-size: xx-large;
+     left: 12px;
+     display: flex;
+     top: -07px;
+     position: relative;
+     height: 40px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+     /* margin-left: 700px; */
+     /* margin-bottom: 50px   ;  */
+}
+
+#txt1{
+    color: rgb(7, 7, 145);
+}
+#txt2
+{
+
+    color: white;
+
+}
+ #items ul li{
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    padding:20px,15px;
+    position: relative;
+    left: 50px;
+    top: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+ 
+#items ul li a{
+    display: inline;
+    padding: 20px;
+    
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+   font-size: large;
+    font-weight: 600;
+    line-height: 1.5;
+    color: white;
+
+} 
+ nav{
+    height: 115px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg");
+}
+#items{
+    position: relative;
+    bottom: 95px;
+    left: 470px;
+}
+.li:hover{
+    background-color: #133e3f;
+    color: beige;
+} 
+#items li span:hover{
+    background-color: none;
+    background: none;
+}
+ #image{
+    height: 750px;
+    background-color: white;
+}
+ #name{
+    height: 30px;
+    width: 530px;
+    border-radius: 50px;
+    margin-left: 200px;
+    margin-top: 30px;
+    font-weight: bolder;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+#sub {
+    
+    height: 40px;
+    width: 250px;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(32, 157, 157);
+    color: white;
+    
+   }
+#re{
+    
+    height: 40px;
+    width: 250px;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(32, 157, 157);
+    color: white;
+    } 
+ 
+#row
+{
+    display: flex;
+/* -ms-flex-wrap: wrap; */
+flex-wrap: wrap;
+/* margin-right: -15px;
+margin-left: -15px; */
+/* border: 2px solid black; */
+height: 610px;
+background-color: white;
+}
+#col{
+    /* border: 2px solid yellowgreen; */
+    height: 500px;
+    width: 1800px;
+    margin-top: 60px;
+    background-color: #133e3f;
+    display: flex;
+    
+}
+#content
+{
+    width: 30%;
+    height: 100%;
+
+    background-color: white;
+    box-sizing: border-box;
+}
+#box
+{
+    width: 50%;
+    height: 200px;
+    background-color:#133e3f;
+    border-left: 100px solid white;
+    border-bottom: 500px solid transparent;
+    box-sizing: border-box;
+}
+#hi{
+    /* border: 2px solid black; */
+    height: 300px;
+    width: 300px;
+    margin-top:140px;
+    margin-left: 140px;
+    
+}
+h3{
+font-size: 1.75rem;
+font-family:Arial, Helvetica, sans-serif ;
+font-weight: 900;
+}
+p{
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+font-family:Arial, Helvetica, sans-serif ;
+}
+#but{
+   
+    height: 60px;
+    width: 550px;
+    margin-left: 200px;
+    word-spacing: 30px;
+}
+#items li:hover{
+    background-color: #133e3f;
+}
