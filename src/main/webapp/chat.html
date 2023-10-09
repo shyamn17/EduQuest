@@ -1,24 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        .slide {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: slide 2s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+    </style>
 </head>
 <body>
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6461a1cc74285f0ec46b7041/1h0em02ga';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-    </script>
-    <!--End of Tawk.to Script-->
+    <h1 id="heading" class="slide">O V E R V I E W</h1>
 </body>
+<script>
+    var h1 = document.querySelector("#heading");
+var num = 0;
+var data = [
+  {
+    name1: "O V E R V I E W",
+  },
+  {
+    name1: "C O D I N G </>",
+  },
+  {
+    name1: "C O U R S E S",
+  }
+];
+
+function updateContent() {
+    h1.classList.remove("slide"); // Remove the slide class
+    setTimeout(function () {
+        h1.innerText = data[num].name1;
+        num = (num + 1) % data.length;
+        h1.classList.add("slide"); // Add the slide class to restart the animation
+    }, 10);
+}
+
+setInterval(updateContent, 2000);
+
+</script>
 </html>

@@ -45,8 +45,8 @@ ul{
     display: flex;
     padding:20px,15px;
     position: relative;
-    left: 50px;
-    top: 12px;
+    left: 190px;
+    top: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
 span :hover{
@@ -58,11 +58,10 @@ span :hover{
     padding: 20px;
     
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    font-family: 16px,"Poppins", sans-serif;
    font-size: large;
-    font-weight: 600;
     line-height: 1.5;
-    color: black
+    color: white
 
 } 
 #items li span:hover{

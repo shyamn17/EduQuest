@@ -1,6 +1,10 @@
 let email=document.querySelector(".email");
 let pwd=document.querySelector(".pwd");
 let sub=document.querySelector(".sub");
+let sign=document.querySelector("#reg");
+sign.addEventListener("click",()=>{
+  window.location.href="./signup.html"
+})
 console.log(sub);
 
 function checkUser(arr)
