@@ -77,11 +77,12 @@ button.active{
 
 } 
 nav{
-    height:690px;
+    height:700px;
+    width: 1600px;
     background-repeat: no-repeat;
     background-size: cover;
-    /* display: flex;
-     position: absolute; */
+     /* display: flex; */
+     position: fixed;
     background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg);
 }
 #items{
@@ -174,4 +175,7 @@ font-family: "Poppins", sans-serif;
     height: 20px;
     font-size: small;
     font-family:"Poppins", sans-serif;
+}
+#id{
+    position: absolute;
 }
