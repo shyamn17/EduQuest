@@ -39,7 +39,7 @@ function updateContent() {
   h1.classList.add("slide"); // Add the slide class to restart the animation
 }, 10);
 }
-setInterval(updateContent, 4000);
+setInterval(updateContent, 3000);
 let btn=document.querySelector("#span")
 btn.addEventListener("click", ()=>{
     window.location.href="./courses.html"
