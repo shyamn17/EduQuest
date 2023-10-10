@@ -64,7 +64,7 @@ span :hover{
     color: white
 
 } 
-#items li span:hover{
+#li span:hover{
     background-color: none;
     background: none;
 }
@@ -83,10 +83,7 @@ span :hover{
     background-color: #133e3f;
     color: beige;
 } 
-#items li span:hover{
-    background-color: none;
-    background: none;
-}
+
 #sh{
     background-color: white;
     /* border: 2px solid black; */

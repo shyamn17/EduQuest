@@ -40,4 +40,3 @@ function updateContent() {
 }, 10);
 }
 setInterval(updateContent, 4000);
-
