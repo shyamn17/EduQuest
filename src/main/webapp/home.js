@@ -40,3 +40,7 @@ function updateContent() {
 }, 10);
 }
 setInterval(updateContent, 4000);
+let btn=document.querySelector("#span")
+btn.addEventListener("click", ()=>{
+    window.location.href="./courses.html"
+})

@@ -179,3 +179,10 @@ font-family: "Poppins", sans-serif;
 #id{
     position: absolute;
 }
+/* @media screen and (max-width: 400px) {
+  nav   
+ {   
+      padding: 20px;
+ }
+    
+} */
