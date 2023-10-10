@@ -190,6 +190,10 @@ span :hover{
     <button id="read"> READ MORE</button>
 </div>
 <script>
+    let read=document.querySelector('#read');
+    read.addEventListener("click",()=>{
+        window.location.href="./courses.html"
+    })
     let btn=document.querySelector("#span")
     btn.addEventListener("click", ()=>{
         window.location.href="./courses.html"

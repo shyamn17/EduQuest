@@ -67,10 +67,10 @@ console.log("hi");
 {
   console.log( checkUser(JSON.parse(localStorage.getItem("datalist"))))
    if(checkUser(JSON.parse(localStorage.getItem("datalist")))){
-    alert("logged in ")
+    alert("Login successful ")
     window.location.href="./home.html"
    }else{
-    alert("enter crt username and password ")
+    alert("Invalid username or password")
    }
 
 
