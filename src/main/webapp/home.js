@@ -18,7 +18,7 @@ var data = [
 function updateContent() {
   h1.innerText = data[num].name1;
   btn1.style.borderColor = "";
-  h1.classList.remove("slide"); // Remove the slide class
+  h1.classList.remove("slide"); 
   setTimeout(function () {
     btn1.style.borderColor = "";
       h1.innerText = data[num].name1;
@@ -36,7 +36,7 @@ function updateContent() {
   btn3.style.borderColor = "#133e3f";
   }
   num = (num + 1) % data.length;
-  h1.classList.add("slide"); // Add the slide class to restart the animation
+  h1.classList.add("slide"); 
 }, 10);
 }
 setInterval(updateContent, 3000);
