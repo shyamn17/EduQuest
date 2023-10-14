@@ -5,10 +5,10 @@ var btn3=document.querySelector("#but3");
 var num = 0;
 var data = [
   {
-    name1: "O V E R V I E W",
+    name1: "C O D I N G </>",
   },
   {
-    name1: "C O D I N G </>",
+    name1: "O V E R V I E W",
   },
   {
     name1: "C O U R S E S",

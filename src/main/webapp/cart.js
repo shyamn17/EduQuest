@@ -18,7 +18,7 @@ let products = [
         id: 1,
         name: 'JAVA FULL STACK',
         image: 'https://www.prakalpana.com/wp-content/uploads/2022/05/43.jpg',
-        price: 3499
+        price: 3999
     },
     {
         id: 2,
@@ -59,7 +59,7 @@ function initApp(){
         newDiv.innerHTML = `
             <img src="${value.image}">
             <div class="title">${value.name}</div>
-            <div class="price">${value.price.toLocaleString()}</div>
+            <div class="price"><span id="java">₹${value.price}</span>₹${(value.price - 100)}</div>
             <button onclick="addToCard(${key})">Add To Cart</button>`;
         list.appendChild(newDiv);
     })
@@ -67,7 +67,6 @@ function initApp(){
 initApp();
 function addToCard(key){
     if(listCards[key] == null){
-        // copy product form list to list card
         listCards[key] = JSON.parse(JSON.stringify(products[key]));
         listCards[key].quantity = 1;
     }
@@ -85,7 +84,7 @@ function reloadCard(){
             newDiv.innerHTML = `
                 <div><img src="${value.image}"/></div>
                 <div>${value.name}</div>
-                <div>${value.price.toLocaleString()}</div>
+                <div>₹ ${value.price}</div>
                 <div>
                     <button onclick="changeQuantity(${key}, ${value.quantity - 1})">-</button>
                     <div class="count">${value.quantity}</div>
@@ -94,7 +93,7 @@ function reloadCard(){
                 listCard.appendChild(newDiv);
         }
     })
-    total.innerText = totalPrice.toLocaleString();
+    total.innerText ="₹ " + totalPrice;
     quantity.innerText = count;
 }
 function changeQuantity(key, quantity){
