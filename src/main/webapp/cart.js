@@ -59,7 +59,7 @@ function initApp(){
         newDiv.innerHTML = `
             <img src="${value.image}">
             <div class="title">${value.name}</div>
-            <div class="price"><span id="java">₹${value.price}</span>₹${(value.price - 100)}</div>
+            <div class="price"><span id="java">₹${value.price}</span>₹${value.price-100}</div>
             <button onclick="addToCard(${key})">Add To Cart</button>`;
         list.appendChild(newDiv);
     })
@@ -93,7 +93,7 @@ function reloadCard(){
                 listCard.appendChild(newDiv);
         }
     })
-    total.innerText ="₹ " + totalPrice;
+    total.innerText ="₹ " + `${totalPrice}`;
     quantity.innerText = count;
 }
 function changeQuantity(key, quantity){
@@ -105,3 +105,20 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }   
+
+var div=document.querySelector('#sp');
+let countdownTime = 86400;
+        function updateCountdown() {
+            const hours = Math.floor(countdownTime / 3600);
+            const minutes = Math.floor((countdownTime % 3600) / 60);
+            const seconds = countdownTime % 60;
+            div.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+
+            if (countdownTime > 0) {
+                countdownTime--;
+                setTimeout(updateCountdown, 1000);
+            } else {
+                div.innerHTML = "Offer has ended!";
+            }
+        }
+        updateCountdown();

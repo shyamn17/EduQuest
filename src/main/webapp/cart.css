@@ -55,7 +55,7 @@ header .shopping span{
 }
 .list .item .price{
     margin: 10px;
-   
+    
 }
 .list .item .price #java{
     margin: 10px;
@@ -84,6 +84,15 @@ button:hover{
     background-color: #453E3B;
     height: 100vh;
     transition: 0.5s;
+}
+#s{
+    font-family: "Poppins", sans-serif;
+    font-size:large;
+}
+#sp{
+    color: red;
+    font-size:x-large;
+    font-weight: 750;
 }
 .active .card{
     left: calc(100% - 500px);
