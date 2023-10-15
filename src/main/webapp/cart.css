@@ -55,11 +55,11 @@ header .shopping span{
 }
 .list .item .price{
     margin: 10px;
-    
-}
-.list .item .price #java{
-    margin: 10px;
     text-decoration:line-through;
+}
+.list .item .price1{
+    margin: 10px;
+    
 }
 .list .item button{
     background-color: #133e3f;
