@@ -108,18 +108,18 @@ function changeQuantity(key, quantity){
 }   
 
 var div=document.querySelector('#sp');
-let countdownTime = 86400;
-        function updateCountdown() {
-            const hours = Math.floor(countdownTime / 3600);
-            const minutes = Math.floor((countdownTime % 3600) / 60);
-            const seconds = countdownTime % 60;
+let count = 86400;
+        function Countdown() {
+            const hours = Math.floor(count / 3600);
+            const minutes = Math.floor((count % 3600) / 60);
+            const seconds = count % 60;
             div.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
 
-            if (countdownTime > 0) {
-                countdownTime--;
-                setTimeout(updateCountdown, 1000);
+            if (count > 0) {
+                count--;
+                setTimeout(Countdown, 1000);
             } else {
                 div.innerHTML = "Offer has ended!";
             }
         }
-        updateCountdown();
+        Countdown();
