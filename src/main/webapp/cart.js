@@ -12,6 +12,11 @@ openShopping.addEventListener('click', ()=>{
 closeShopping.addEventListener('click', ()=>{
     body.classList.remove('active');
 })
+total.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.open('https://razorpay.me/@shyam7164', '_blank');
+});
+
 
 let products = [
     {
@@ -94,7 +99,7 @@ function reloadCard(){
                 listCard.appendChild(newDiv);
         }
     })
-    total.innerText ="₹ " + `${totalPrice}`;
+    total.innerText ="Pay Now ₹ " + `${totalPrice}`;
     quantity.innerText = count;
 }
 function changeQuantity(key, quantity){
