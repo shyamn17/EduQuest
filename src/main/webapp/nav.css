@@ -65,6 +65,7 @@ ul{
 } 
  nav{
     height: 115px;
+    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg");
@@ -72,7 +73,7 @@ ul{
 #items{
     position: relative;
     bottom: 95px;
-    left: 470px;
+    left: 350px;
 }
 .li:hover{
     background-color: #133e3f;

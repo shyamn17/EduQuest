@@ -1,9 +1,10 @@
-/* nav{
+nav{
     height: 50px;
+    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url(https://images.theconversation.com/files/526342/original/file-20230515-35525-9hwk75.jpg?ixlib=rb-1.1.0&rect=0%2C344%2C5235%2C2617&q=45&auto=format&w=1356&h=668&fit=crop);
-} */
+    /* background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url(https://images.theconversation.com/files/526342/original/file-20230515-35525-9hwk75.jpg?ixlib=rb-1.1.0&rect=0%2C344%2C5235%2C2617&q=45&auto=format&w=1356&h=668&fit=crop); */
+}
 img{
     width: 135px;
     height: 100px;
@@ -96,7 +97,7 @@ button{
     #items{
         position: relative;
         bottom: 95px;
-        left: 500px;
+        left: 350px;
     }
     .li:hover{
         background-color: #133e3f;
