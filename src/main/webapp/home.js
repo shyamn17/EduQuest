@@ -47,18 +47,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Function to toggle the menu icon and navigation items visibility
   function toggleMenu() {
-    if (navItems.style.display === 'none') {
-      navItems.style.display = 'flex';
-      hamburgerMenu.classList.add('change'); // Add the 'change' class to display the cross icon
-    } else {
-      navItems.style.display = 'none';
-      hamburgerMenu.classList.remove('change'); // Remove the 'change' class to display the hamburger icon
+    if (window.innerWidth <= 768) {
+      if (navItems.style.display === 'none') {
+        navItems.style.display = 'flex';
+        hamburgerMenu.classList.add('change'); // Add the 'change' class to display the cross icon
+      } else {
+        navItems.style.display = 'none';
+        hamburgerMenu.classList.remove('change'); // Remove the 'change' class to display the hamburger icon
+      }
     }
   }
 
-  // Initially display the cross icon
+  // Initially display the cross icon only for mobile screens
   toggleMenu();
 
   // Toggle the menu icon and navigation items visibility on click
   hamburgerMenu.addEventListener('click', toggleMenu);
+
+  // Reset navigation items display for desktop screens
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+      navItems.style.display = 'flex';
+    }
+  });
 });
