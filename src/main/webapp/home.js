@@ -40,3 +40,25 @@ function updateContent() {
 setInterval(updateContent, 3000);
 
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const navItems = document.getElementById('items');
+
+  // Function to toggle the menu icon and navigation items visibility
+  function toggleMenu() {
+    if (navItems.style.display === 'none') {
+      navItems.style.display = 'flex';
+      hamburgerMenu.classList.add('change'); // Add the 'change' class to display the cross icon
+    } else {
+      navItems.style.display = 'none';
+      hamburgerMenu.classList.remove('change'); // Remove the 'change' class to display the hamburger icon
+    }
+  }
+
+  // Initially display the cross icon
+  toggleMenu();
+
+  // Toggle the menu icon and navigation items visibility on click
+  hamburgerMenu.addEventListener('click', toggleMenu);
+});
