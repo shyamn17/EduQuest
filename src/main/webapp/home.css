@@ -60,6 +60,12 @@ button.active{
     color: rgb(255, 255, 255);
 
 }
+#items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 #items ul li{
     font-size: x-large;
     text-align: center;
@@ -67,7 +73,7 @@ button.active{
     padding:20px,15px;
     position: relative;
     /* left: 50px; */
-    margin-right: auto;
+    margin-left: 20px;
     top: 12px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
@@ -93,9 +99,11 @@ nav{
     background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg);
 }
 #items{
-    position: relative;
-    margin-bottom: auto;
-       left: 350px;
+    display: flex; /* Use flexbox */
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+    height: 100%; /* Occupy full height of the nav */
+    padding-right: 20px;
    
     }
 .li:hover{
@@ -150,9 +158,11 @@ font-family: "Poppins", sans-serif;
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-    animation: slide 3s linear infinite; /* Increase animation duration to 3 seconds */
+    animation: slide 9s linear infinite; /* Increase animation duration to 3 seconds */
 }
-
+.read {
+    overflow: hidden;
+}
 @keyframes slide {
     0% {
         width: 0;
@@ -185,13 +195,6 @@ font-family: "Poppins", sans-serif;
 #id{
     position: absolute;
 }
-/* @media screen and (max-width: 400px) {
-  nav   
- {   
-      padding: 20px;
- }
-    
-} */
 }
 h2{
     color:rgb(19, 18, 17);
@@ -247,7 +250,7 @@ button.active{
     display: flex;
     padding:20px,15px;
     position: relative;
-    left: 50px;
+    margin-left: auto;
     top: 12px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 } 
@@ -275,9 +278,19 @@ nav{
 #items{
     position: relative;
     bottom: 95px;
-    left: 570px;
-   
+    /* left: 570px; */
+    display: flex;
+    margin-left: auto; 
+    align-items: center;
+    height: 100%;
+    padding: 0 20px; 
     }
+ #items ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+     }
 .li:hover{
     background-color: #133E3F;
 }
@@ -325,26 +338,6 @@ font-family: "Poppins", sans-serif;
     color: none;
     cursor: pointer;
 }
-
-.slide {
-    white-space: nowrap;
-    overflow: hidden;
-    width: 0;
-    animation: slide 6s linear infinite; /* Increase animation duration to 6 seconds */
-}
-
-@keyframes slide {
-    0%, 100% {
-        width: 0;
-    }
-    10%, 90% {
-        width: 100%; /* Slide for the first and last 10% of the animation */
-    }
-    50% {
-        width: 0; /* Pause for 50% of the animation */
-    }
-}
-
 .centered {
     text-align: center;
     display: flex;
@@ -371,10 +364,33 @@ font-family: "Poppins", sans-serif;
 #id{
     position: absolute;
 }
-/* @media screen and (max-width: 400px) {
-  nav   
- {   
-      padding: 20px;
- }
+@media only screen and (max-width: 768px) {
+    #items {
+        position: absolute;
+        top: 60px; /* Adjust the top spacing as needed */
+        background-color: rgba(21, 198, 181, 0.8);
+        width: 100%;
+        display: none;
+    }
+
+    #items.open {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #items ul {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0 20px; /* Adjust padding for mobile */
+    }
+
+    #items ul li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Add spacing between items */
+    }
+     .centered {
+        padding-top: 20px; /* Adjust top padding to accommodate the fixed navbar */
+    }
     
-} */
+}

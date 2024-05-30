@@ -127,11 +127,18 @@ span :hover{
 }
 #box
 {   margin-top: 10px ;
-    /* border: 2px solid pink; */
+    margin-left: 40px; /* Add margin at the start */
+    margin-right: 20px;
     height: 100vh;   
     width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
+#box > div {
+    flex: 0 0 100%; /* Set width of each image to 100% */
+    margin: 10px 0; /* Add some margin between images */
+}
 #img1{
     height: 200px;
     /* border: 2px solid blue;  */
@@ -232,4 +239,30 @@ span :hover{
 } 
 .box:hover{
     cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+    #box > div {
+        flex: 0 0 calc(33.33% - 20px); /* Set width to 33.33% minus margins */
+        max-width: calc(33.33% - 20px); /* Set maximum width to 33.33% minus margins */
+        margin: 10px; /* Add some margin between images */
+    }
+    #box > div:nth-child(n+4) {
+        margin-top: -120px; /* Adjust this value to decrease the margin */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #box > div {
+        flex: 0 0 calc(50% - 20px); /* Set width to 50% minus margins */
+        max-width: calc(50% - 20px); /* Set maximum width to 50% minus margins */
+        margin: 10px; /* Add some margin between images */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #box > div {
+        flex: 0 0 calc(100% - 20px); /* Set width to 100% minus margins */
+        max-width: calc(100% - 20px); /* Set maximum width to 100% minus margins */
+        margin: 10px; /* Add some margin between images */
+    }
 }
