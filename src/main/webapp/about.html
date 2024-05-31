@@ -10,6 +10,7 @@
     padding: 0px;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
  img{
     width: 115px;
@@ -163,11 +164,80 @@ span :hover{
 
 
 }
+.hamburger-menu {
+    display: none; /* Hide by default */
+}
+
+@media only screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: block; /* Show on smaller screens */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 9999; /* Ensure it's on top of other content */
+        cursor: pointer;
+    }
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    /* Animation for hamburger menu */
+    .change .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .change .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .change .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Show/hide navigation links */
+    #items {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 200px;
+        background-color: rgba(21, 198, 181, 0.8);
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 20px;
+    }
+
+    #items.open {
+        display: flex;
+    }
+
+    #items ul {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    #items ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
     </style>
 </head>
 <body>
+    <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
     <script src="https://kit.fontawesome.com/73b67c2f0d.js" crossorigin="anonymous"></script>
-    <body>
         <nav>
             <img src="./vectorstock_24451537-removebg-preview.png" alt="">
             <div id="txt">
@@ -203,6 +273,32 @@ span :hover{
     btn.addEventListener("click", ()=>{
         window.location.href="./courses.html"
     })
+    
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburgerMenu = document.querySelector('.hamburger-menu');
+  const navItems = document.getElementById('items');
+
+  function toggleMenu() {
+    if (window.innerWidth <= 768) {
+      if (navItems.style.display === 'none') {
+        navItems.style.display = 'flex';
+        hamburgerMenu.classList.add('change'); // Add the 'change' class to display the cross icon
+      } else {
+        navItems.style.display = 'none';
+        hamburgerMenu.classList.remove('change'); // Remove the 'change' class to display the hamburger icon
+      }
+    }
+  }
+  toggleMenu();
+  hamburgerMenu.addEventListener('click', toggleMenu);
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+      navItems.style.display = 'flex';
+    }
+  });
+});
+
 </script>
 </body>
 </html>

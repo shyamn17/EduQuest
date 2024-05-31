@@ -1,12 +1,7 @@
 img{
-    width: 135px;
-    height: 100px;
-}
-body{
-    padding: 0px;
-    margin: 0px;img{
-    width: 135px;
-    height: 100px;
+    width: 115px;
+    height: 80px;
+    margin-left: 20px;
 }
 body{
     padding: 0px;
@@ -72,7 +67,6 @@ button.active{
     display: flex;
     padding:20px,15px;
     position: relative;
-    /* left: 50px; */
     margin-left: 20px;
     top: 12px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -95,17 +89,24 @@ nav{
     background-repeat: no-repeat;
     background-size: cover;
      /* display: flex; */
-     position: fixed;
+     position: relative;
     background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg);
 }
-#items{
-    display: flex; /* Use flexbox */
-    justify-content: flex-end; /* Align items to the right */
+#txt {
+    margin-right: auto; /* Pushes the #txt to the left */
+}
+#items {
+    position: absolute; /* Position relative to the nav */
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    height: 100%; /* Occupy full height of the nav */
-    padding-right: 20px;
-   
-    }
+    margin-right: auto;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
 .li:hover{
     background-color: #133E3F;
 }
@@ -195,7 +196,6 @@ font-family: "Poppins", sans-serif;
 #id{
     position: absolute;
 }
-}
 h2{
     color:rgb(19, 18, 17);
 
@@ -282,6 +282,7 @@ nav{
     display: flex;
     margin-left: auto; 
     align-items: center;
+    justify-self: center;
     height: 100%;
     padding: 0 20px; 
     }

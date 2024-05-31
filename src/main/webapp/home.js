@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const hamburgerMenu = document.querySelector('.hamburger-menu');
   const navItems = document.getElementById('items');
 
-  // Function to toggle the menu icon and navigation items visibility
   function toggleMenu() {
     if (window.innerWidth <= 768) {
       if (navItems.style.display === 'none') {
@@ -57,14 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   }
-
-  // Initially display the cross icon only for mobile screens
   toggleMenu();
-
-  // Toggle the menu icon and navigation items visibility on click
   hamburgerMenu.addEventListener('click', toggleMenu);
 
-  // Reset navigation items display for desktop screens
   window.addEventListener('resize', function() {
     if (window.innerWidth > 768) {
       navItems.style.display = 'flex';
