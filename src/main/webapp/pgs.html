@@ -9,10 +9,9 @@
 <script src="https://kit.fontawesome.com/73b67c2f0d.js" crossorigin="anonymous"></script>
 <body>
     <nav>
-        <img src="./vectorstock_24451537-removebg-preview.png" alt="">
-        <div id="txt">
-            <div id="txt1"> Edu</div>
-            <div id="txt2">Quest</div>
+        <div class="logo-container">
+        <img src="./EduQuest-removebg-preview.png" alt="">
+        </div>
             <div id="items">
                 <ul>
                    <div><li class="li"><a href="./home.html">HOME</a></li></div>
@@ -24,8 +23,7 @@
                 <li> <span id="span"> <i class="fa-solid fa-cart-shopping fa-bounce" style="color: #1f575b; font-size: 45px ;"  ></i></li>
                </ul>
            </div>
-        </div>
-</nav><br><br>
+    </nav>
     <div id="d">
         <label for="" class="lab">Enter a program name :</label>
                
@@ -64,8 +62,10 @@
           var num=7;
             var flag=1;
             for (let i = 0; i < parseInt(num/2); i++) {
-               if(num%i==0){flag=0
-                 break;}
+               if(num%i==0){
+               flag=0;
+                 break;
+                }
                 
             }if(flag)
             console.log("prime num");
@@ -88,7 +88,7 @@
           } else if (sum > 1 && sum <= 4) {
             return false;
           }
-          return isHappy;
+          return Happy;
         }
         function Armstrong()
         {
@@ -223,11 +223,11 @@
             var selectValue=select.value
             var inpValue=inp.value
             if(selectValue=="pallindrome")
-            {h2.innerText=`${isPallindrome()}`}
+            {h2.innerText=`${Pallindrome()}`}
             else if(selectValue=="prime")
-            { h2.innerText=`${isPrime()}`}
+            { h2.innerText=`${Prime()}`}
             else if(selectValue=="HappyNo")
-            { h2.innerText=`${isHappy()}`}   
+            { h2.innerText=`${Happy()}`}   
             else if(selectValue=="ArmstrongNo")
             { h2.innerText=`${Armstrong()}`} 
             else if(selectValue=="StrongNo")
