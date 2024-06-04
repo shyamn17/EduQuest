@@ -15,7 +15,10 @@ var data = [
     name1: "C O U R S E S",
   }
 ];
-
+let btn=document.querySelector("#span")
+btn.addEventListener("click", ()=>{
+    window.location.href="./cart.html"
+})
 function updateContent() {
   h1.innerText = data[num].name1;
   btn1.style.borderColor = "";
