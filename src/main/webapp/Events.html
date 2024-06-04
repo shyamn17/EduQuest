@@ -9,22 +9,74 @@
     body{
     margin: 0px;
     padding: 0px;
-}
- img{
-    width: 115px;
-    height: 80px;
-    margin-left: 20px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 h2{
     color:rgb(19, 18, 17);
-
 }
-ul{
+nav{
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg);
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+ul {
+    display: flex;
     list-style: none;
-    
+    margin: 0;
+    padding: 0;
+}
+#items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 9px;
+    width: 100%;
+    font-weight: bolder;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#items ul li {
+    text-decoration: none;
+    font-family: 16px,"Poppins", sans-serif;
+   font-size: large;
+    line-height: 1.5;
+    color: white;
+    margin: 0 10px;
+    position: relative;
+}
+
+#items ul li a {
+    text-decoration: none;
+    color: #d4d4d4;
+    padding: 10px 20px;
+    display: inline-block;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#items ul li:hover, #items ul li a:hover {
+    background-color:#133e3f;
+    border-radius: 5px;
+}
+img {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 15px;
+    padding-bottom: 40px;
 }
 #txt
 {
@@ -38,65 +90,6 @@ ul{
      /* margin-left: 700px; */
      /* margin-bottom: 50px   ;  */
  }
-
-#txt1{
-    color: rgb(7, 7, 145);
-}
-#txt2
-{
-
-    color: white
-
-}
-#items ul li{
-    font-size: x-large;
-    text-align: center;
-    display: flex;
-    padding:20px,15px;
-    position: relative;
-    left: 50px;
-    top: 12px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
- 
- nav{
-    height: 100px;
-    width: 100vw;
-} 
-#items ul li a{
-    display: inline;
-    padding: 20px;
-    
-    text-decoration: none;
-    font-family:16px, "Poppins", sans-serif;
-   font-size: large;
-    line-height: 1.5;
-    color: white;
-
-} 
-span :hover{
-    cursor: pointer;
-}
-
- nav{
-    height: 115px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg");
-}
-#items{
-    position: relative;
-    bottom: 95px;
-    left: 350px;
-}
-.li:hover{
-    background-color: #133e3f;
-    color: beige;
-} 
-#items li span:hover{
-    background-color: none;
-    background: none;
-}
 #abc{
     height: 650px;
     background-image: none;
@@ -110,8 +103,8 @@ span :hover{
     border: 2px solid rgb(229, 223, 223);
     height: 170px;
     margin-top: 40px;
-    margin-right: 90px;
-    margin-left: 90px;
+    margin-right: 520px;
+    margin-left: 100px;
     border-radius: 10px;
 }
 #asd{
@@ -122,11 +115,10 @@ span :hover{
     margin-left: 90px;
     border-radius: 10px;
 }
-
 #xyz h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: -35px;
 }
 #xyz h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -152,10 +144,15 @@ span :hover{
 }
 #img3{
     /* background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg"); */
-    height: 140px;
-    width: 350px;
-    margin-left: 940px;
+    height: 40px;
+    width: 290px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
     margin-top: -140px;
+    padding-right: 15px;
+      justify-content: center;
+    padding-right: 50px;
     /* border: 1px solid red; */
 }
 #items li span:hover{
@@ -181,9 +178,13 @@ span :hover{
 }
 #ig3{
     /* background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg"); */
-    height: 140px;
-    width: 350px;
-    margin-left: 940px;
+    height: 40px;
+    width: 290px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    justify-content: center;
+    padding-right: 50px;
     margin-top: -140px;
     /* border: 1px solid red; */
 }
@@ -194,8 +195,10 @@ span :hover{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(32, 157, 157);
     color: white;
-    margin-top: 42px;
+    display: flex;
+    justify-content: flex-end;
     margin-left: 120px;
+    justify-content: center;
 }
 #su{
     height: 60px;
@@ -230,7 +233,7 @@ button:hover{
     border: none;
     color: black;
     margin-top: 40px;
-    margin-left: 80px;
+    margin-left: 10px;
     background-color: white;
 }
 #string a{
@@ -242,7 +245,7 @@ button:hover{
 #line{
     height: 140px;
     border: 1px solid rgb(229, 223, 223);
-    margin-left: 500px;
+    margin-left: 420px;
     
 }
 
@@ -250,8 +253,8 @@ button:hover{
 #lin{
     height: 140px;
     border: 1px solid grey;
-    margin-left: 500px;
-    margin-top: -100px;
+    margin-left: 420px;
+    margin-top: -101px;
     
 }
 #lin{
@@ -264,12 +267,10 @@ button:hover{
 </head>
 <body>
     <script src="https://kit.fontawesome.com/73b67c2f0d.js" crossorigin="anonymous"></script>
-
     <nav>
-        <img src="./vectorstock_24451537-removebg-preview.png" alt="">
-        <div id="txt">
-            <div id="txt1"> Edu</div>
-            <div id="txt2">Quest</div>
+        <div class="logo-container">
+        <img src="./EduQuest-removebg-preview.png" alt="">
+        </div>
             <div id="items">
                 <ul>
                    <div><li class="li"><a href="./home.html">HOME</a></li></div>
@@ -281,8 +282,7 @@ button:hover{
                 <li> <span id="span"> <i class="fa-solid fa-cart-shopping fa-bounce" style="color: #1f575b; font-size: 45px ;"  ></i></li>
                </ul>
            </div>
-        </div>
-</nav>
+    </nav>
 
 <nav id="abc">
     <div id="xyz">
@@ -290,14 +290,14 @@ button:hover{
         <h3> Start your coding journey here to feed your brain.</h3>
         <div id="qwe">
              <div id="img1"><div id="line"></div></div>
-             <div id="img2"><button id="string"><h1>NUMBER PROGRAMS</h1></button><div id="lin"></div></div>
+             <div id="img2"><button id="string"><h1>NUMBER PROGRAMMES</h1></button><div id="lin"></div></div>
              <div id="img3"><button id="sub"><a href="./pgs.html" id="aa"><h4>CLICK HERE</h4></a> </button></div>
         </div>
 
         <div id="asd">
              <!-- <div id="img1"><div id="line"></div></div> -->
              <div id="ig1"><div id="line"></div></div>
-            <div id="ig2"><button id="string"><h1>STRING PROGRAMS</h1></button><div id="lin"></div></div>
+            <div id="ig2"><button id="string"><h1>STRING PROGRAMMES</h1></button><div id="lin"></div></div>
                 
             <div id="ig3"><button id="su"><a href="./strpgs.html" id="aa"><h4>CLICK HERE</h4></a></button></div>
        
