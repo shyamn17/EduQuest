@@ -1,109 +1,141 @@
-nav{
-    height: 50px;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url(https://images.theconversation.com/files/526342/original/file-20230515-35525-9hwk75.jpg?ixlib=rb-1.1.0&rect=0%2C344%2C5235%2C2617&q=45&auto=format&w=1356&h=668&fit=crop); */
-}
-img{
-    width: 135px;
-    height: 100px;
-}
-body{
+body {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: Arial, sans-serif;
     padding: 0px;
     margin: 0px;
 }
-h2{
-    color:rgb(19, 18, 17);
 
-}
-ul{
+nav {
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg);
     display: flex;
-    /* justify-content: space-evenly;
-    align-items: center; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+img {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    color: #d4d4d4;
+    font-family: Consolas, 'Courier New', monospace;
+    white-space: pre-wrap;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul {
+    display: flex;
     list-style: none;
-    
+    margin: 0;
+    padding: 0;
 }
-#txt
-{
-    font-size: xx-large;
-    left: 9px;
+.logo-container {
     display: flex;
-    position: relative;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-    /* margin-left: 700px;
-    margin-bottom: 50px   ; */
+    flex-direction: column;
+    align-items: center;
 }
-#txt1{
-    color: rgb(7, 7, 145);
-}
-#txt2
-{
 
-    color: rgb(255, 255, 255);
-
-}
-#ram{
+#ram {
     height: 35px;
-    width: 153px;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px 0;
+    background-color: #3e3e3e;
+    color: #d4d4d4;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
 }
-.lab{
+
+.lab {
     font-family: "Poppins", sans-serif;
-    font-size:x-large;
+    font-size: large;
+    color: #d4d4d4;
 }
-#ram{
+
+button {
     height: 35px;
-    width: 140px;
+    width: 100px;
+    background-color: #0e639c;
+    color: #d4d4d4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
 }
-button{
-    height: 30px;
-    width: 70px;
+
+button:hover {
+    background-color: #007acc;
 }
-#inp{
+
+#inp {
     display: none;
 }
-.lab{
-    font-family: "Poppins", sans-serif;
-    font-size:x-large;
-}
-#items ul li{
-    font-size: x-large;
-    text-align: center;
+.logo-container {
     display: flex;
-    padding:20px,15px;
-    position: relative;
-    left: 50px;
-    top: 12px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
- 
-#items ul li a{
-    display: inline;
-    padding: 20px;
-    
+    flex-direction: column;
+    align-items: center;
+}
+#items ul li {
     text-decoration: none;
     font-family: 16px,"Poppins", sans-serif;
    font-size: large;
     line-height: 1.5;
     color: white;
+    margin: 0 10px;
+    position: relative;
+}
 
-}  
-     nav{
-        height: 140px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg");
-    }
-    #items{
-        position: relative;
-        bottom: 95px;
-        left: 350px;
-    }
-    .li:hover{
-        background-color: #133e3f;
-        color: beige;
-    } 
-    #items li span:hover{
-        background-color: none;
-        background: none;
-    }
+#items ul li a {
+    text-decoration: none;
+    color: #d4d4d4;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+#items ul li:hover, #items ul li a:hover {
+    background-color:#133e3f;
+    border-radius: 5px;
+}
+
+#d {
+    background-color: #252526;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    width: 100%;
+    color: #d4d4d4;
+}
+
+#code-display {
+    width: 100%;
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: Consolas, 'Courier New', monospace;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+#items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 9px;
+    width: 100%;
+    font-weight: bolder;
+}
