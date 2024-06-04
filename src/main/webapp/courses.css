@@ -6,94 +6,81 @@ body{
     overflow-x: hidden;
     overflow-y: auto;
 }
-img{
-    width: 115px;
-    height: 75px;
-    margin-left: 20px;
-}
 h2{
     color:rgb(19, 18, 17);
 }
-ul{
+img {
+    width: 220px;
+    height: 220px;
     display: flex;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+nav {
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg);
+    display: flex;
     align-items: center;
-    list-style: none;
-    
+    justify-content: space-between;
+    padding: 0 20px;
 }
-#txt
-{
-     font-size: xx-large;
-     left: 10px;
-     display: flex;
-     position: relative;
-     height: 40px;
-     top: -07px;
-     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-     /* margin-left: 700px; */
-     /* margin-bottom: 50px   ;  */
-}
-#txt1{
-    color: rgb(7, 7, 145);
-}
-#txt2
-{
-    color:white;
-}
-#items ul li{
-    font-size: x-large;
-    text-align: center;
+ul {
     display: flex;
-    padding:20px,15px;
-    position: relative;
-    left: 190px;
-    top: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
-span :hover{
-    cursor: pointer;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-#items ul li a{
-    display: inline;
-    padding: 20px;
-    
+#items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 9px;
+    width: 100%;
+    font-weight: bolder;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#items ul li {
     text-decoration: none;
     font-family: 16px,"Poppins", sans-serif;
    font-size: large;
     line-height: 1.5;
-    color: white
-} 
-#items li span i:hover{
-    background-color: none;
-    background: none;
-    color: none;
+    color: white;
+    margin: 0 10px;
+    position: relative;
+}
+
+#items ul li a {
+    text-decoration: none;
+    color: #d4d4d4;
+    padding: 10px 20px;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#items ul li:hover, #items ul li a:hover {
+    background-color:#133e3f;
+    border-radius: 5px;
+}
+span :hover{
     cursor: pointer;
 }
- nav{
-    height: 115px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg");
-}
-#items{
-    position: relative;
-    bottom: 80px;
-    left: 370px;
-}
-.li:hover{
-    background-color: #133e3f;
-    color: beige;
-} 
+
 #sh{
     background-color: white;
     /* border: 2px solid black; */
     height: 705px;
     margin-top: -20px;
 }
-#items li:hover{
-    background-color: #133e3f;
-    color: beige;
-} 
+
 #hs{
     height: 100px;
     margin-top: 30px;
@@ -126,7 +113,7 @@ span :hover{
     background-image: url("https://e1.pxfuel.com/desktop-wallpaper/574/84/desktop-wallpaper-net-full-stack-developer-full-stack-thumbnail.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 100px;
+    margin-left: 180px;
     margin-top: 20px;
     border-radius: 10%;
 }
@@ -137,7 +124,7 @@ span :hover{
     background-image: url("https://tse1.mm.bing.net/th?id=OIP.jWf2Ar5hcVvqjuC5yRVQZQHaDt&pid=Api&P=0&h=180");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 500px;
+    margin-left: 580px;
     margin-top: -200px;
     border-radius: 10%;
 }
@@ -148,7 +135,7 @@ span :hover{
     background-image: url("https://www.itbrainy.com/wp-content/uploads/2020/07/MeanStack-training-in-Coimbatore.png");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 900px;
+    margin-left: 980px;
     margin-top: -200px;
     border-radius: 10%;
 }
@@ -159,7 +146,7 @@ span :hover{
     background-image: url("https://tse4.mm.bing.net/th?id=OIP.lDHUJFQvxhk6V7e5OuYWSAHaEO&pid=Api&P=0&h=180");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 900px;
+    margin-left: 980px;
     margin-top: 40px;
     border-radius: 10%;
 }
@@ -170,7 +157,7 @@ span :hover{
     background-image: url("https://tse4.mm.bing.net/th?id=OIP.IjBnPkEiuctq6xOXBlt7swHaEV&pid=Api&P=0&h=180");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 500px;
+    margin-left: 580px;
     margin-top: -200px;
     border-radius: 10%;
 }
@@ -181,7 +168,7 @@ span :hover{
     background-image: url("https://tse1.mm.bing.net/th?id=OIP.nuaS3IoZ56uqNhyGxffMnwHaD4&pid=Api&P=0&h=180");
     background-size: cover;
     background-repeat: no-repeat;
-    margin-left: 100px;
+    margin-left: 180px;
     margin-top: -200px;
     border-radius: 10%;
 }
