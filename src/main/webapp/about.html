@@ -12,91 +12,80 @@
     height: 100vh;
     overflow: hidden;
 }
- img{
-    width: 115px;
-    height: 80px;
-    margin-left: 20px;
+img {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 15px;
+    padding-bottom: 40px;
 }
 h2{
     color:rgb(19, 18, 17);
-
 }
-ul{
+nav {
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg);
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    list-style: none;
-    
+    justify-content: space-between;
+    padding: 0 20px;
 }
-#txt
-{
-     font-size: xx-large;
-     left: 20px;
-     display: flex;
-     top: -07px;
-     position: relative;
-     height: 30px;
-     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-     /* margin-left: 700px; */
-     /* margin-bottom: 50px   ;  */
- }
 
-#txt1{
-    color: rgb(7, 7, 145);
-}
-#txt2
-{
-
-    color: white;
-
-}
-#items ul li{
-    font-size: x-large;
-    text-align: center;
+ul {
     display: flex;
-    padding:20px,15px;
-    position: relative;
-    left: 50px;
-    top: 12px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
- 
-#items ul li a{
-    display: inline;
-    padding: 20px;
-    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 9px;
+    width: 100%;
+    font-weight: bolder;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#items ul li {
     text-decoration: none;
     font-family: 16px,"Poppins", sans-serif;
    font-size: large;
     line-height: 1.5;
     color: white;
-
-} 
- nav{
-    height: 115px;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg");
-}
-#items{
+    margin: 0 10px;
     position: relative;
-    bottom: 95px;
-    left: 350px;
 }
-.li:hover{
-    background-color: #133e3f;
-    color: beige;
-} 
-#items li span:hover{
-    background-color: none;
-    background: none;
+
+#items ul li a {
+    text-decoration: none;
+    color: #d4d4d4;
+    padding: 10px 20px;
+    display: inline-block;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#items ul li:hover, #items ul li a:hover {
+    background-color:#133e3f;
+    border-radius: 5px;
+}
+img {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 15px;
+    padding-bottom: 40px;
 }
 .bor{
-   
     height: 100vh;
     width: 100vw;
-
 }
 #img1{
     height: 450px;
@@ -105,7 +94,7 @@ ul{
     background-image: url("https://sliwainsights.com/wp-content/uploads/2019/08/Offer_Letter_sh-999x666.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 150px;
+    margin-left: 100px;
     margin-top: 40px;
     border-radius: 7%;
 }
@@ -115,42 +104,37 @@ ul{
     /* border: 1px solid black; */
     background-image: url("https://www.jobmonkey.com/wp-content/uploads/2016/12/irresistible-job-offer-dp-300x250.jpg");
     background-size: cover;
-    margin-left: 450px;
+    margin-left: 400px;
     margin-top: -210px;
     border-radius: 05%;
 }
 #abt{
     font-weight: bolder;
     font-size: 32px;
-    margin-left: 750px;
+    margin-left: 700px;
     margin-top:-400px;
     font-family: "Poppins", sans-serif;
 }
 #let{
     font-size: 20px;
-    margin-left: 750px;
+    margin-left: 700px;
     margin-top:30px;
+    padding-right: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     word-wrap: break-word; 
     overflow-wrap: break-word;
 }
-span :hover{
-    cursor: pointer;
-}
-
-#read{
-    
+#read{ 
     height: 50px;
     width: 160px;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
     /* background-color: rgb(73, 72, 72); */
     background-color: #133e3f;
-
     color: white;
-    margin-left: 800px;
-    margin-top: 25px;
-   
+    margin-left: 700px;
+    margin-top: 5px;
+    border-radius: 10px;
  }
  button:hover{
     cursor: pointer;
@@ -161,8 +145,6 @@ span :hover{
     background-color: rgba(255, 255, 255, 0.25);
     border: 1px solid black;
     color: black;
-
-
 }
 .hamburger-menu {
     display: none; /* Hide by default */
@@ -238,23 +220,21 @@ span :hover{
         <div class="bar"></div>
     </div>
     <script src="https://kit.fontawesome.com/73b67c2f0d.js" crossorigin="anonymous"></script>
-        <nav>
-            <img src="./vectorstock_24451537-removebg-preview.png" alt="">
-            <div id="txt">
-                <div id="txt1"> Edu</div>
-                <div id="txt2">Quest</div>
-                <div id="items">
-                    <ul>
-                       <div><li class="li"><a href="./home.html">HOME</a></li></div>
-                       <li class="li"><a href="./about.html">ABOUT</a></li>
-                       <li class="li"><a href="./courses.html">COURSES</a></li>
-                       <li class="li"><a href="./Events.html">CODING</a></li>
-                       <li class="li"><a href="./signup.html">SIGN UP</a></li>
-                       <li class="li"><a href="./login.html">LOGIN</a></li>
-                    <li> <span id="span"> <i class="fa-solid fa-cart-shopping fa-bounce" style="color: #1f575b; font-size: 45px ;"  ></i></li>
-                   </ul>
-               </div>
-            </div>
+    <nav>
+        <div class="logo-container">
+        <img src="./EduQuest-removebg-preview.png" alt="">
+        </div>
+            <div id="items">
+                <ul>
+                   <div><li class="li"><a href="./home.html">HOME</a></li></div>
+                   <li class="li"><a href="./about.html">ABOUT</a></li>
+                   <li class="li"><a href="./courses.html">COURSES</a></li>
+                   <li class="li"><a href="./Events.html">CODING</a></li>
+                   <li class="li"><a href="./signup.html">SIGN UP</a></li>
+                   <li class="li"><a href="./login.html">LOGIN</a></li>
+                <li> <span id="span"> <i class="fa-solid fa-cart-shopping fa-bounce" style="color: #1f575b; font-size: 45px ;"  ></i></li>
+               </ul>
+           </div>
     </nav>
 
 <div class="bor">
@@ -271,7 +251,7 @@ span :hover{
     })
     let btn=document.querySelector("#span")
     btn.addEventListener("click", ()=>{
-        window.location.href="./courses.html"
+        window.location.href="./cart.html"
     })
     
 document.addEventListener('DOMContentLoaded', function() {
