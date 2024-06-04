@@ -1,37 +1,24 @@
-img{
-    width: 115px;
-    height: 80px;
-    margin-left: 20px;
-}
-body{
+img {
+    width: 230px;
+    height: 160px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+body {
     padding: 0px;
     margin: 0px;
 }
-h2{
-    color:rgb(19, 18, 17);
-
+h2 {
+    color: rgb(19, 18, 17);
 }
-ul{
+ul {
     display: flex;
-    /* justify-content: space-evenly;
-    align-items: center; */
     list-style: none;
-    
 }
-#txt
-{
-     font-size: xx-large;
-     left: 8px;
-     display: flex;
-     position: relative;
-     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-     /* margin-left: 700px;
-     margin-bottom: 50px   ; */
-}
-#txt1{
-    color: rgb(7, 7, 145);
-}
-button{
+
+button {
     background-color: rgba(21, 198, 181, 0.8);
     border: 3px solid white;
     color: white;
@@ -42,77 +29,65 @@ button{
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 50%;
-}   
-button:hover{
-    border:3px solid #133e3f;
 }
-button.active{
-    border:3px solid #133e3f;
+button:hover {
+    border: 3px solid #133e3f;
 }
-#txt2
-{
-
-    color: rgb(255, 255, 255);
-
+button.active {
+    border: 3px solid #133e3f;
+}
+#items ul li {
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    padding: 20px, 15px;
+    margin-left: 20px;
+    margin-top: 22px;
+    top: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#items ul li a {
+    text-decoration: none;
+    color: #d4d4d4;
+    padding: 10px 20px;
+    display: inline-block;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav {
+    height: 700px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    background-image: linear-gradient(rgba(21, 198, 181, 0.8), rgba(21, 198, 181, 0.8)), url(./telc-coaching-india\ \(1\).jpg);
 }
 #items ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    padding-right: 30px; /* Add padding to the right end */
 }
-#items ul li{
-    font-size: x-large;
-    text-align: center;
-    display: flex;
-    padding:20px,15px;
-    position: relative;
-    margin-left: 20px;
-    top: 12px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
- 
-#items ul li a{
-    display: inline;
-    padding: 20px;
-    margin-right: auto;
-    text-decoration: none;
-    font-family: 16px,"Poppins", sans-serif;
-   font-size: large;
-    line-height: 1.5;
-    color: white;
 
-} 
-nav{
-    height:100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-     /* display: flex; */
-     position: relative;
-    background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg);
-}
-#txt {
-    margin-right: auto; /* Pushes the #txt to the left */
-}
+/* Adjust the position of the nav items */
 #items {
     position: absolute; /* Position relative to the nav */
-    top: 0;
+    top: 20px; /* Adjust this value to move the items up */
     right: 0;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-right: auto;
-    overflow-x: hidden; /* Hide horizontal overflow */
+    align-items: flex-end;
+    overflow: hidden; /* Hide horizontal overflow */
 }
 
-.li:hover{
+.li:hover {
     background-color: #133E3F;
+    border-radius: 5px;
 }
-.read a{
-display: inline-block;
-font-family: "Poppins", sans-serif;
+.read a {
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
     padding: 10px 45px;
     background-color: #133e3f;
     border: 1px solid #133e3f;
@@ -123,24 +98,19 @@ font-family: "Poppins", sans-serif;
     line-height: 1.5;
     text-decoration: none;
     transition: transform 0.5s ease;
-
 }
-#opt:hover{
+#opt:hover {
     cursor: pointer;
     color: #133E3F;
-    font-size:small;
-    font-family:"Poppins", sans-serif;
+    font-size: small;
+    font-family: "Poppins", sans-serif;
     background: transparent;
-    /* background-color: rgba(21, 198, 181, 0.8); */
-    /* box-sizing: border-box; */
 }
-#icon{
+#icon {
     height: 30px;
     width: 50px;
 }
-    
-.read center h1{
-
+.read center h1 {
     color: #ffffff;
     font-family: "Poppins", sans-serif;
     font-size: 4.4rem;
@@ -148,18 +118,17 @@ font-family: "Poppins", sans-serif;
     font-weight: bold;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
-#items li span i:hover{
+#items li span i:hover {
     background-color: none;
     background: none;
     color: none;
     cursor: pointer;
 }
-
 .slide {
     white-space: nowrap;
     overflow: hidden;
     width: 0;
-    animation: slide 9s linear infinite; /* Increase animation duration to 3 seconds */
+    animation: slide 9s linear infinite;
 }
 .read {
     overflow: hidden;
@@ -169,13 +138,13 @@ font-family: "Poppins", sans-serif;
         width: 0;
     }
     20% {
-        width: 100%; /* Slide for the first 20% of the animation (1.6 seconds) */
+        width: 100%;
     }
     80% {
-        width: 100%; /* Pause for 1 second (from 20% to 80%) */
+        width: 100%;
     }
     100% {
-        width: 0; /* Slide back to 0 at the end (remaining 20%) */
+        width: 0;
     }
 }
 .centered {
@@ -184,198 +153,35 @@ font-family: "Poppins", sans-serif;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    margin-top: -30px; /* Use a negative margin to move content upward */
+    margin-top: 22px;
 }
-#opt{
+#opt {
     margin-top: 8px;
     width: 94px;
     height: 22px;
     font-size: small;
-    font-family:"Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
 }
-#id{
+#id {
     position: absolute;
 }
-h2{
-    color:rgb(19, 18, 17);
-
-}
-ul{
-    display: flex;
-    /* justify-content: space-evenly;
-    align-items: center; */
-    list-style: none;
-    
-}
-#txt
-{
-     font-size: xx-large;
-     left: 8px;
-     display: flex;
-     position: relative;
-     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-     /* margin-left: 700px;
-     margin-bottom: 50px   ; */
-}
-#txt1{
-    color: rgb(7, 7, 145);
-}
-button{
-    background-color: rgba(21, 198, 181, 0.8);
-    border: 3px solid white;
-    color: white;
-    padding: 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%;
-}   
-button:hover{
-    border:3px solid #133e3f;
-}
-button.active{
-    border:3px solid #133e3f;
-}
-#txt2
-{
-
-    color: rgb(255, 255, 255);
-
-}
-#items ul li{
-    font-size: x-large;
-    text-align: center;
-    display: flex;
-    padding:20px,15px;
-    position: relative;
-    margin-left: auto;
-    top: 12px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-} 
- 
-#items ul li a{
-    display: inline;
-    padding: 20px;
-    
-    text-decoration: none;
-    font-family: 16px,"Poppins", sans-serif;
-   font-size: large;
-    line-height: 1.5;
-    color: white;
-
-} 
-nav{
-    height:700px;
-    width: 1600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-     /* display: flex; */
-     position: fixed;
-    background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg);
-}
-#items{
-    position: relative;
-    bottom: 95px;
-    /* left: 570px; */
-    display: flex;
-    margin-left: auto; 
-    align-items: center;
-    justify-self: center;
-    height: 100%;
-    padding: 0 20px; 
-    }
- #items ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-     }
-.li:hover{
-    background-color: #133E3F;
-}
-.read a{
-display: inline-block;
-font-family: "Poppins", sans-serif;
-    padding: 10px 45px;
-    background-color: #133e3f;
-    border: 1px solid #133e3f;
-    color: #ffffff;
-    margin-top: 20px;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    text-decoration: none;
-    transition: transform 0.5s ease;
-
-}
-#opt:hover{
-    cursor: pointer;
-    color: #133E3F;
-    font-size:small;
-    font-family:"Poppins", sans-serif;
-    background: transparent;
-    /* background-color: rgba(21, 198, 181, 0.8); */
-    /* box-sizing: border-box; */
-}
-#icon{
-    height: 30px;
-    width: 50px;
-}
-    
-.read center h1{
-
-    color: #ffffff;
-    font-family: "Poppins", sans-serif;
-    font-size: 4.4rem;
-    letter-spacing: .1rem;
-    font-weight: bold;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-#items li span i:hover{
-    background-color: none;
-    background: none;
-    color: none;
-    cursor: pointer;
-}
-.centered {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Add styles for the courses section */
 .read.courses {
     background-color: #133e3f;
 }
-
 .read.courses h1 {
     color: #ffffff;
 }
-#opt{
-    margin-top: 8px;
-    width: 94px;
-    height: 22px;
-    font-size: small;
-    font-family:"Poppins", sans-serif;
-}
-#id{
-    position: absolute;
-}
 .hamburger-menu {
-    display: none; /* Hide by default */
+    display: none;
 }
-
 @media only screen and (max-width: 768px) {
     .hamburger-menu {
-        display: block; /* Show on smaller screens */
+        display: block;
         position: fixed;
         top: 20px;
         right: 20px;
-        z-index: 9999; /* Ensure it's on top of other content */
+        z-index: 9999;
         cursor: pointer;
     }
     .bar {
@@ -385,47 +191,33 @@ font-family: "Poppins", sans-serif;
         margin: 6px 0;
         transition: 0.4s;
     }
-
-    /* Animation for hamburger menu */
     .change .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6px);
     }
-
     .change .bar:nth-child(2) {
         opacity: 0;
     }
-
     .change .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-6px, -6px);
     }
-
-    /* Show/hide navigation links */
     #items {
-        display: none;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -100%;
         height: 100vh;
-        width: 200px;
-        background-color: rgba(21, 198, 181, 0.8);
-        display: none;
+        background-color: #fff;
         flex-direction: column;
-        align-items: flex-end;
-        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease-in-out;
     }
-
-    #items.open {
-        display: flex;
-    }
-
     #items ul {
         flex-direction: column;
-        align-items: flex-end;
-        padding: 0;
     }
-
     #items ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
+        margin: 10px 0;
+    }
+    .hamburger-menu.active + #items {
+        right: 0;
     }
 }
