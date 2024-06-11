@@ -180,8 +180,7 @@ text-align: center;
 }
 
 #img6 {
-    background-image: url("./python_full_stack_overview.jpg");
-    background-image: url("");
+    background-image: url("./python_full_stack_overview\ \(1\).jpg");
     margin-left: 180px;
     margin-top: -200px;
 }
