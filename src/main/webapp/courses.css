@@ -106,102 +106,172 @@ span :hover{
     /* border: 2px solid pink; */
     height: 550px;
 }
-#img1{
+#img1 {
     height: 200px;
-    /* border: 2px solid blue;  */
+    position: relative;
     width: 350px;
-    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/574/84/desktop-wallpaper-net-full-stack-developer-full-stack-thumbnail.jpg");
+    background-image: url("./desktop-wallpaper-net-full-stack-developer-full-stack-thumbnail.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 180px;
     margin-top: 20px;
     border-radius: 10%;
+    overflow: hidden;
+    transition: background-image 0.3s ease;
 }
-#img2{
+
+#img1:hover::before {
+    content: 'Core Java' '\A'
+    'Advanced Java' '\A'
+    'HTML, CSS, and JavaScript' '\A'
+    'Spring Framework' '\A'
+    'Hibernate' '\A'
+    'RESTful Web Services' '\A'
+    'Database Management Systems';
+white-space: pre;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 17px;
+}
+
+#img2, #img3, #img4, #img5, #img6 {
     height: 200px;
-    /* border: 2px solid blue;  */
     width: 350px;
-    background-image: url("https://tse1.mm.bing.net/th?id=OIP.jWf2Ar5hcVvqjuC5yRVQZQHaDt&pid=Api&P=0&h=180");
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 10%;
+    overflow: hidden;
+    transition: background-image 0.3s ease;
+}
+
+#img2 {
+    background-image: url("./th.jpg");
     margin-left: 580px;
     margin-top: -200px;
-    border-radius: 10%;
 }
-#img3{
-    height: 200px;
-     /* border: 2px solid blue;   */
-    width: 350px;
-    background-image: url("https://www.itbrainy.com/wp-content/uploads/2020/07/MeanStack-training-in-Coimbatore.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+
+#img3 {
+    background-image: url("./MeanStack-training-in-Coimbatore.png");
     margin-left: 980px;
     margin-top: -200px;
-    border-radius: 10%;
 }
-#img4{
-    height: 200px;
-     /* border: 2px solid blue;   */
-    width: 350px;
-    background-image: url("https://tse4.mm.bing.net/th?id=OIP.lDHUJFQvxhk6V7e5OuYWSAHaEO&pid=Api&P=0&h=180");
-    background-size: cover;
-    background-repeat: no-repeat;
+
+#img4 {
+    background-image: url("./aws-certified-devops-training-in-hyderabad.jpg");
     margin-left: 980px;
     margin-top: 40px;
-    border-radius: 10%;
 }
-#img5{
-    height: 200px;
-    /* border: 2px solid blue;  */
-    width: 350px;
-    background-image: url("https://tse4.mm.bing.net/th?id=OIP.IjBnPkEiuctq6xOXBlt7swHaEV&pid=Api&P=0&h=180");
-    background-size: cover;
-    background-repeat: no-repeat;
+
+#img5 {
+    background-image: url("./Untitled.png");
     margin-left: 580px;
     margin-top: -200px;
-    border-radius: 10%;
 }
-#img6{
-    height: 200px;
-    /* border: 2px solid blue;  */
-    width: 350px;
-    background-image: url("https://tse1.mm.bing.net/th?id=OIP.nuaS3IoZ56uqNhyGxffMnwHaD4&pid=Api&P=0&h=180");
-    background-size: cover;
-    background-repeat: no-repeat;
+
+#img6 {
+    background-image: url("./python_full_stack_overview.jpg");
+    background-image: url("");
     margin-left: 180px;
     margin-top: -200px;
-    border-radius: 10%;
 }
- #img1:hover{
-    /* background-color: #133e3f; */
-    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/574/84/desktop-wallpaper-net-full-stack-developer-full-stack-thumbnail.jpg");
-    background-image:linear-gradient(rgba(31, 59, 57, 0.5),rgba(44, 77, 74, 0.5)), url("https://e1.pxfuel.com/desktop-wallpaper/574/84/desktop-wallpaper-net-full-stack-developer-full-stack-thumbnail.jpg");   
-} 
-#img2:hover{
-    /* background-color: #133e3f; */
-    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/411/249/desktop-wallpaper-be-your-awesome-mern-stack-developer-by-nishant08111-mern-stack-thumbnail.jpg");
-    background-image:linear-gradient(rgba(31, 59, 57, 0.5),rgba(44, 77, 74, 0.5)), url("https://e1.pxfuel.com/desktop-wallpaper/411/249/desktop-wallpaper-be-your-awesome-mern-stack-developer-by-nishant08111-mern-stack-thumbnail.jpg");   
+
+#img2:hover::before {
+    content: 'MongoDB \A Express.js \A React.js \A Node.js \A JavaScript(ES6+), HTML5, CSS3 \A RESTful APIs \A JSON Web Tokens (JWT)';
+    white-space: pre;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 17px;
+    text-align: center;
 }
-#img4:hover{
-    /* background-color: #133e3f; */
-    background-image: url("https://uploads-ssl.webflow.com/60c912417dc3bac5c9fa2616/61cb84e73ab5cb48cbb1c342_DevOps%20on%20AWS%20(1)%20(1)%20(1).png");
-    background-image:linear-gradient(rgba(31, 59, 57, 0.5),rgba(44, 77, 74, 0.5)), url("https://uploads-ssl.webflow.com/60c912417dc3bac5c9fa2616/61cb84e73ab5cb48cbb1c342_DevOps%20on%20AWS%20(1)%20(1)%20(1).png");   
-} 
-#img3:hover{
-    /* background-color: #133e3f; */
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQduk2Wudp-Sy4pr4N-e8wwDntbikQvh_Hb3g&usqp=CAU");
-    background-image:linear-gradient(rgba(31, 59, 57, 0.5),rgba(44, 77, 74, 0.5)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQduk2Wudp-Sy4pr4N-e8wwDntbikQvh_Hb3g&usqp=CAU");   
-} 
-#img5:hover{
-    /* background-color: #133e3f; */
-    background-image: url("https://www.drishtiias.com/images/blogs/machine-learning-2.png");
-    background-image:linear-gradient(rgba(31, 59, 57, 0.5),rgba(44, 77, 74, 0.5)), url("https://www.drishtiias.com/images/blogs/machine-learning-2.png");   
-} 
-#img6:hover{
-    /* background-color: #133e3f; */
-    background-image: url("https://previews.123rf.com/images/timbrk/timbrk1604/timbrk160400153/56836558-powerful-programming-language-word-python-of-the-yellow-square-pixels-on-a-black-matrix-background.jpg");
-    background-image:linear-gradient(rgba(31, 59, 57, 0.5),rgba(44, 77, 74, 0.5)), url("https://previews.123rf.com/images/timbrk/timbrk1604/timbrk160400153/56836558-powerful-programming-language-word-python-of-the-yellow-square-pixels-on-a-black-matrix-background.jpg");   
-} 
+#img3:hover::before {
+    content: 'MongoDB \A Express.js \A React.js \A Node.js \A JavaScript(ES6+), HTML5, CSS3 \A RESTful APIs \A JSON Web Tokens (JWT)';
+    white-space: pre;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+#img4:hover::before {
+    content: 'Amazon Web Services (AWS) \A DevOps Tools and Methodologies \A Jenkins (CD/CD) \A Docker \A Kubernetes \A Git \A Terraform \A Monitoring and Logging';
+    white-space: pre;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+#img5:hover::before {
+    content: 'Artificial Intelligence \A Machine Learning \A Deep Learning \A Natural Language Processing (NLP) \A Computer Vision & Data Mining \A Reinforcement Learning \A Supervised & Unsupervised Learning \A Model Evaluation';
+    white-space: pre;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+#img6:hover::before {
+    content: 'Python \A Django \A Flask \A JavaScript, HTML5, CSS3 \A RESTful APIs \A SQL \A  Project Work and Case Studies \A';
+    white-space: pre;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+}
+
 .box:hover{
     cursor: pointer;
 }

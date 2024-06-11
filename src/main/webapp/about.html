@@ -33,7 +33,6 @@ nav {
     justify-content: space-between;
     padding: 0 20px;
 }
-
 ul {
     display: flex;
     list-style: none;
@@ -62,7 +61,6 @@ ul {
     margin: 0 10px;
     position: relative;
 }
-
 #items ul li a {
     text-decoration: none;
     color: #d4d4d4;
@@ -70,7 +68,6 @@ ul {
     display: inline-block;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 #items ul li:hover, #items ul li a:hover {
     background-color:#133e3f;
     border-radius: 5px;
@@ -90,8 +87,7 @@ img {
 #img1{
     height: 450px;
     width: 400px;
-    /* border: 1px solid black; */
-    background-image: url("https://sliwainsights.com/wp-content/uploads/2019/08/Offer_Letter_sh-999x666.jpg");
+    background-image: url("./Offer_Letter_sh-999x666.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 100px;
@@ -101,8 +97,7 @@ img {
 #img2{
     height: 250px;
     width: 250px;
-    /* border: 1px solid black; */
-    background-image: url("https://www.jobmonkey.com/wp-content/uploads/2016/12/irresistible-job-offer-dp-300x250.jpg");
+    background-image: url("./irresistible-job-offer-dp-300x250.jpg");
     background-size: cover;
     margin-left: 400px;
     margin-top: -210px;
@@ -129,7 +124,6 @@ img {
     width: 160px;
     font-family: "Poppins", sans-serif;
     font-size: 14px;
-    /* background-color: rgb(73, 72, 72); */
     background-color: #133e3f;
     color: white;
     margin-left: 700px;
@@ -141,22 +135,21 @@ img {
     background-color: rgb(38, 38, 69);
  }
 #read:hover{
-    /* background-color: ; */
     background-color: rgba(255, 255, 255, 0.25);
     border: 1px solid black;
     color: black;
 }
 .hamburger-menu {
-    display: none; /* Hide by default */
+    display: none; 
 }
 
 @media only screen and (max-width: 768px) {
     .hamburger-menu {
-        display: block; /* Show on smaller screens */
+        display: block;
         position: fixed;
         top: 20px;
         right: 20px;
-        z-index: 9999; /* Ensure it's on top of other content */
+        z-index: 9999; 
         cursor: pointer;
     }
     .bar {
@@ -166,8 +159,6 @@ img {
         margin: 6px 0;
         transition: 0.4s;
     }
-
-    /* Animation for hamburger menu */
     .change .bar:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
@@ -179,8 +170,6 @@ img {
     .change .bar:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
-
-    /* Show/hide navigation links */
     #items {
         display: none;
         position: fixed;
@@ -262,10 +251,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.innerWidth <= 768) {
       if (navItems.style.display === 'none') {
         navItems.style.display = 'flex';
-        hamburgerMenu.classList.add('change'); // Add the 'change' class to display the cross icon
+        hamburgerMenu.classList.add('change'); 
       } else {
         navItems.style.display = 'none';
-        hamburgerMenu.classList.remove('change'); // Remove the 'change' class to display the hamburger icon
+        hamburgerMenu.classList.remove('change'); 
       }
     }
   }
@@ -278,7 +267,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-
 </script>
 </body>
 </html>
