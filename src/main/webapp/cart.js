@@ -40,7 +40,7 @@ let products = [
     {
         id: 4,
         name: 'AWS DEVOPS',
-        image:'./DEVOPS.jpeg',
+        image:'./AWS-DEVOPS-COMBO.jpeg',
         price: 5399
     },
     {
