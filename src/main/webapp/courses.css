@@ -21,11 +21,12 @@ nav {
     height: 80px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg);
+    background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./Images/telc-coaching-india\ \(1\).jpg);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 ul {
     display: flex;
@@ -110,7 +111,7 @@ span :hover{
     height: 200px;
     position: relative;
     width: 350px;
-    background-image: url("./desktop-wallpaper-net-full-stack-developer-full-stack-thumbnail.jpg");
+    background-image: url("./Images/desktop-wallpaper-net-full-stack-developer-full-stack-thumbnail.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 180px;
@@ -156,31 +157,31 @@ text-align: center;
 }
 
 #img2 {
-    background-image: url("./th.jpg");
+    background-image: url("./Images/th.jpg");
     margin-left: 580px;
     margin-top: -200px;
 }
 
 #img3 {
-    background-image: url("./MeanStack-training-in-Coimbatore.png");
+    background-image: url("./Images/MeanStack-training-in-Coimbatore.png");
     margin-left: 980px;
     margin-top: -200px;
 }
 
 #img4 {
-    background-image: url("./aws-certified-devops-training-in-hyderabad.jpg");
+    background-image: url("./Images/aws-certified-devops-training-in-hyderabad.jpg");
     margin-left: 980px;
     margin-top: 40px;
 }
 
 #img5 {
-    background-image: url("./Untitled.png");
+    background-image: url("./Images/Untitled.png");
     margin-left: 580px;
     margin-top: -200px;
 }
 
 #img6 {
-    background-image: url("./python_full_stack_overview\ \(1\).jpg");
+    background-image: url("./Images/python_full_stack_overview\ \(1\).jpg");
     margin-left: 180px;
     margin-top: -200px;
 }

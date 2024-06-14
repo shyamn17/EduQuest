@@ -22,37 +22,37 @@ let products = [
     {
         id: 1,
         name: 'JAVA FULL STACK',
-        image: './images\ \(1\).jpg',
+        image: './Images/images\ \(1\).jpg',
         price: 3899
     },
     {
         id: 2,
         name: 'MEAN FULL STACK',
-        image: './A.png',
+        image: './Images/A.png',
         price: 4099
     },
     {
         id: 3,
         name: 'MERN FULL STACK',
-        image: './MERN-Stack.jpeg',
+        image: './Images/MERN-Stack.jpeg',
         price: 3099
     },
     {
         id: 4,
         name: 'AWS DEVOPS',
-        image:'./AWS-DEVOPS-COMBO.jpeg',
+        image:'./Images/AWS-DEVOPS-COMBO.jpeg',
         price: 5399
     },
     {
         id: 5,
         name: 'PYTHON FULL STACK',
-        image: './download.jpg',
+        image: './Images/download.jpg',
         price: 4399
     },
     {
         id: 6,
         name: 'AI & MACHINE LEARNING',
-        image:'./AI-WITH-ADVANCED-DEEP-LEARNING.jpeg',
+        image:'./Images/AI-WITH-ADVANCED-DEEP-LEARNING.jpeg',
         price: 5899
     }
 ];

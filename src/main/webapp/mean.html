@@ -14,89 +14,68 @@
     height: 100vh;
     width: 100vw;
 }
- img{
-    width: 115px;
+nav {
     height: 80px;
-    margin-left: 20px;
-}
-h2{
-    color:rgb(19, 18, 17);
-
-}
-ul{
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg); */
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    list-style: none;
-    
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-#txt
-{
-     font-size: xx-large;
-     left: 20px;
-     display: flex;
-     top: -07px;
-     position: relative;
-     height: 30px;
-     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-     /* margin-left: 700px; */
-     /* margin-bottom: 50px   ;  */
- }
-
-#txt1{
-    color: rgb(7, 7, 145);
-}
-#txt2
-{
-
-    color: rgb(96, 20, 226)
-
-}
-#items ul li{
-    font-size: x-large;
-    text-align: center;
+ul {
     display: flex;
-    padding:20px,15px;
-    position: relative;
-    left: 50px;
-    top: 12px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
-#items ul li a{
-    display: inline;
-    padding: 20px;
-    
+#items {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 9px;
+    width: 100%;
+    font-weight: bolder;
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#items ul li {
     text-decoration: none;
     font-family: 16px,"Poppins", sans-serif;
    font-size: large;
     line-height: 1.5;
-    color: black
-
-} 
-#items li span:hover{
-    background-color: none;
-    background: none;
-}
- nav{
-    height: 115px;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-image:linear-gradient(rgba(32, 254, 236, 0.5),rgba(32, 254, 236, 0.5)), url("https://wbstraining.in/wp-content/uploads/2022/10/telc-coaching-india.jpg"); */
-}
-#items{
-    position: relative;
-    bottom: 90px;
-    left: 350px;
-}
-.li:hover{
-    background-color:#133e3f;
     color: white;
+    margin: 0 10px;
+    position: relative;
+}
+
+#items ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    display: inline-block;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#items ul li:hover, #items ul li a:hover {
+    background-color:#133e3f;
     border-radius: 5px;
-} 
-#items li span:hover{
-    background-color: none;
-    background: none;
+    color:whitesmoke;
+}
+img {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 15px;
+    padding-bottom: 40px;
 }
 
 #abc{
@@ -107,13 +86,13 @@ ul{
 #zxc{
     height: 450px;
     border: 2px solid rgb(41, 24, 41);
-    background-image: url("./WhatsApp\ Image\ 2023-10-08\ at\ 09.21.59.jpeg");
+    background-image: url("./Images/mean-stack-banner-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
    }
 #man{
     /* border: 2px solid black; */
-    height: 500px;
+    height: 450px;
     width: 800px;
 }
 #man h2{
@@ -145,7 +124,7 @@ ul{
     height: 50px;
     width: 250px;
     /* background-color: whitesmoke; */
-    margin-top: 50px;
+    margin-top: 35px;
     border-radius: 10cm;
     margin-left: 100px;
     font-weight: bolder;
@@ -156,7 +135,7 @@ ul{
     height: 50px;
     width: 250px;
     /* background-color: whitesmoke; */
-    margin-top: 50px;
+    margin-top: 35px;
     border-radius: 10cm;
     margin-left: 20px;
     font-weight: bolder;
@@ -166,7 +145,7 @@ ul{
 /* border: 2px solid rgb(168, 164, 164); */
 height: 150px;
 width: 1200px;
-margin-top: -80px;
+margin-top: -40px;
 margin-left: 100px;
 border-radius: 10px;
 }
@@ -197,10 +176,9 @@ button:hover{
 <script src="https://kit.fontawesome.com/73b67c2f0d.js" crossorigin="anonymous"></script>
 <body>
     <nav>
-        <img src="./vectorstock_24451537-removebg-preview.png" alt="">
-        <div id="txt">
-            <div id="txt1"> Edu</div>
-            <div id="txt2">Quest</div>
+        <div class="logo-container">
+        <img src="./Images/EduQuest-removebg-preview.png" alt="">
+        </div>
             <div id="items">
                 <ul>
                    <div><li class="li"><a href="./home.html">HOME</a></li></div>
@@ -212,15 +190,14 @@ button:hover{
                 <li> <span id="span"> <i class="fa-solid fa-cart-shopping fa-bounce" style="color: #1f575b; font-size: 45px ;"  ></i></li>
                </ul>
            </div>
-        </div>
-</nav>
+    </nav>
 
 
-<nav id="abc">
+<div id="abc">
     <div id="zxc">
         <div id="man"><h2>Full Stack Developer-MEAN Stack</h2>
-            <p>No Hacks. Just Get Ahead<br>with EduQuest</p>
-            <p1>Like our learners, you too can create a real impact</p1><br>
+            <p>Master the MEAN Stack: Build Dynamic Web Applications with MongoDB, Express.js, Angular, and Node.js!</p>
+            <p1>Join our community and make a difference today!</p1><br>
             <button id="app">VIEW MORE</button>
             <button id="add">ADD TO CART</button>
         </div>
@@ -245,7 +222,7 @@ button:hover{
            </ol>
         </div>
     </div>
-</nav>
+</div>
 <script>
     let but=document.querySelector("#add")
     but.addEventListener("click",()=>{

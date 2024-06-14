@@ -10,7 +10,7 @@ body {
 .man {
     height: 700px;
     display: flex;
-    background-image: linear-gradient(rgba(3, 34, 31, 0.8), rgba(3, 34, 31, 0.8)), url("https://www.ukstudycentre.co.uk/wp-content/uploads/2019/10/common-entrance-phased-out-700x415.png");
+    background-image: linear-gradient(rgba(3, 34, 31, 0.8), rgba(3, 34, 31, 0.8)), url("./Images/common-entrance-phased-out-700x415.png");
     background-size: cover;
     padding: 0 20px; /* Add padding to create space at both ends */
     box-sizing: border-box; /* Include padding in width calculation */
@@ -125,7 +125,7 @@ nav {
     height: 80px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./telc-coaching-india\ \(1\).jpg);
+    background-image:linear-gradient(rgba(21, 198, 181, 0.8),rgba(21, 198, 181,  0.8)),url(./Images/telc-coaching-india\ \(1\).jpg);
     display: flex;
     align-items: center;
     justify-content: space-between;
