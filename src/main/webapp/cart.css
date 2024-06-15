@@ -156,3 +156,6 @@ header .shopping span{
 button:hover{
     cursor: pointer;
  }
+.shopping:hover {
+    cursor: pointer;
+}

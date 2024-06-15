@@ -67,7 +67,7 @@ ul {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-#items ul li:hover, #items ul li a:hover {
+#items ul li a:hover {
     background-color:#133e3f;
     border-radius: 5px;
 }
