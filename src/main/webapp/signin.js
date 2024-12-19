@@ -88,6 +88,13 @@ var userdata={
     phone:phone
 }
 datalist.push(userdata)
+alert("Sign up successful!");
+a.value = "";
+      b.value = "";
+      e.value = "";
+      num.value = "";
+      passwd.value = "";
+      confirm.value = "";
 
 localStorage.setItem("datalist", JSON.stringify(datalist))
 }
